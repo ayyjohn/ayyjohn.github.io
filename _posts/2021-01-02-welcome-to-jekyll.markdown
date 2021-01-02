@@ -1,25 +1,30 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hello World"
 date:   2021-01-02 15:13:18 -0800
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+First! 
+Or something like that. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I'm still coming up with good things to write for my first post, so check back soon for actual content. 
 
-Jekyll also offers powerful support for code snippets:
+Meanwhile, did you know tuple unpacking in Python (and other languages) supports nesting?
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight python %}
+>>> t = (0, (1, 2))
+>>> a, (b, c) = t
+>>> a
+0
+>>> b
+1
+>>> c
+2
+>>> a, b, c = t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 3, got 2) 
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+This came up in an interview the other day and I thought it was nifty.
+Also, if you find yourself doing this in prod code, maybe re-evaluate how you're structuring your data.
