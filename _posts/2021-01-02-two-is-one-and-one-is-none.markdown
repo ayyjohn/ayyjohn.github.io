@@ -2,7 +2,7 @@
 layout: post
 title:  "Second Post"
 date:   2021-01-02 15:13:18 -0800
-categories: jekyll update
+permalink: /posts/:title/
 ---
 Second!
 Or something like that.
