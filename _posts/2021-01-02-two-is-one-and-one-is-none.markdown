@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Hello World"
+title:  "Second Post"
 date:   2021-01-02 15:13:18 -0800
 categories: jekyll update
 ---
-First!
+Second!
 Or something like that.
 
 I'm still coming up with good things to write for my first post, so check back soon for actual content.
