@@ -15,6 +15,11 @@ layout: default
           itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
     </p>
+    {%- if page.categories.size > 0 -%}
+    {%- for tag in page.categories -%}
+    <span class="post-tag">{{ tag | capitalize }}</span>
+    {%- endfor -%}
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
