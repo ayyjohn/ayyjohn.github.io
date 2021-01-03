@@ -3,7 +3,7 @@ layout: post
 title:  "Pots and Blogging"
 date:   2021-01-03 11:44:18 -0800
 permalink: /posts/:title
-tags: meta
+categories: [meta]
 ---
 Most people have already heard of the Parable of the Pottery Class (if you haven't, my favorite rendition of it is [Hank Green's](https://www.youtube.com/watch?v=7dxcO26i9uw)).
 
