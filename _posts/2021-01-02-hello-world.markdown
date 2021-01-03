@@ -13,6 +13,10 @@ Meanwhile, did you know tuple unpacking in Python (and other languages) supports
 
 {% highlight python %}
 >>> t = (0, (1, 2))
+>>> a, b, c = t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 3, got 2)
 >>> a, (b, c) = t
 >>> a
 0
@@ -20,10 +24,6 @@ Meanwhile, did you know tuple unpacking in Python (and other languages) supports
 1
 >>> c
 2
->>> a, b, c = t
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: not enough values to unpack (expected 3, got 2)
 {% endhighlight %}
 
 This came up in an interview the other day and I thought it was nifty.
