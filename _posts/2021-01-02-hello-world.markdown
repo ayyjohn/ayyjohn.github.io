@@ -27,4 +27,4 @@ ValueError: not enough values to unpack (expected 3, got 2)
 {% endhighlight %}
 
 This came up in an interview the other day and I thought it was nifty.
-Also, if you find yourself doing this in prod code, maybe re-evaluate how you're structuring your data.
+Also, if you find yourself doing this in an interview, maybe think twice about your solution.
