@@ -23,7 +23,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ayyjohn
 linkedin_username:  ayyjohn
 show_excerpts: true
-google_analytics: G-RL5JRCRDQF
 permalink: pretty
 
 # Build settings
