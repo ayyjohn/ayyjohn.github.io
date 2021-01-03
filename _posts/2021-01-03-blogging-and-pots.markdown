@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pots and Blogging"
+title:  "Blogging and Pots"
 date:   2021-01-03 11:44:18 -0800
 permalink: /posts/:title
 categories: [meta]
