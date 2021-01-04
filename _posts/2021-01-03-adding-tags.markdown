@@ -3,7 +3,7 @@ layout: post
 title:  "How to Add Tags to a Jekyll Blog"
 date:   2021-01-03 14:19:00 -0800
 permalink: /posts/:title
-categories: [meta, python]
+categories: [meta, python, jekyll]
 ---
 Having created a blog from scratch a number of times, I'm fairly confident that for the immediate future I want to do very little customizing of this blog.
 
