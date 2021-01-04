@@ -230,6 +230,19 @@
   margin-right: 4px;
 }
 
+.tag-link {
+  text-decoration: none;
+  color: $grey-color-dark;
+
+  &:visited {
+    color: $grey-color-dark;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 
 /**
  * Posts
