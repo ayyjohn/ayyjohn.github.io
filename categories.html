@@ -1,0 +1,21 @@
+---
+layout: page
+permalink: /tags/
+title: Categories
+---
+
+<div class="posts-by-tag">
+    <ul class="tag-post-list">
+        {% for category in site.categories %}
+        {% capture tag_name %}{{ category | first }}{% endcapture %}
+        <li>
+            <h3 class="tag-header">{{ tag_name | capitalize }}</h3>
+            {% for post in site.categories[tag_name] %}
+            <div class="tag-post-title">
+                <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+            </div>
+            {% endfor %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
