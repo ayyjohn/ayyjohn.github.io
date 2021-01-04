@@ -197,6 +197,16 @@
   }
 }
 
+.tag-post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    list-style: none;
+    margin-bottom: $spacing-unit;
+  }
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
