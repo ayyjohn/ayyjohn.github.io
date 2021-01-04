@@ -3,7 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2021-01-02 15:13:18 -0800
 permalink: /posts/:title
-categories: [python, meta]
+categories: [meta, python]
 ---
 First!
 Or something like that.
