@@ -12,6 +12,7 @@ I'm going to take a pottery based approach to this blog. I want to try a lot of 
 
 * doing 1-2 month long challenges
 * writing reviews of books or tools
+* reading and reflecting on papers
 * writing tutorials
 * writing stories about working as a SWE
 * documenting side projects
