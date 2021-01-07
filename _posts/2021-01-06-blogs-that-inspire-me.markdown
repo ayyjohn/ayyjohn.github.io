@@ -3,6 +3,7 @@ layout: post
 title:  "Blogs That Inspire Me"
 date:   2021-01-06 19:20:10 -0800
 permalink: /posts/:title
+categories: [meta]
 ---
 Every time I read someone else's blog it feels like I fall down a rabbit hole of cross posts to other people's blogs and end up adding more things to my to-read list than I cross off.
 I'm going to do the same to you, but on purpose. These are blogs I recommend others read.
