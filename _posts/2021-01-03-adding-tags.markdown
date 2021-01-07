@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Add Tags to a Jekyll Blog"
-date:   2021-01-03 14:19:00 -0800
+date:   2021-01-04 14:19:00 -0800
 permalink: /posts/:title
 categories: [meta, python, jekyll]
 ---
