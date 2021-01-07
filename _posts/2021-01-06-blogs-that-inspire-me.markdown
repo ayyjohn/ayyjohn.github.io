@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blogs That Inspire Me"
-date:   2021-01-06 19:20:10 -0800
+date:   2021-01-06 13:20:10 -0800
 permalink: /posts/:title
 categories: [meta]
 ---
