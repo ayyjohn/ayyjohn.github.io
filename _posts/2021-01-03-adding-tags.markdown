@@ -5,7 +5,7 @@ date:   2021-01-03 14:19:00 -0800
 permalink: /posts/:title
 categories: [meta, python, jekyll]
 ---
-Having created a blog from scratch a number of times, I'm fairly confident that for the immediate future I want to do very little customizing of this blog.
+Having created a blog from scratch a number of times, I'm fairly confident that for the immediate future I want to do very little customizing of this blog. I've learned from my previous attempts.
 
 I've definitely gotten bored before even writing my second or third post before when the blog was made with React.js because the startup cost was way to high.
 Not being able to write using Markdown the last time I tried basically killed the effort, and it definitely didn't help that I was running everything on AWS which meant I was managing stuff that I probably didn't need to, given that my goal was to be writing.
