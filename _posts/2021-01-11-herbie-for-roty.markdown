@@ -17,7 +17,7 @@ You've got some crowd out there using some form of SQL to do data analysis to co
 And teams have analytics departments as well. [Or at least they fucking should](https://www.boltsfromtheblue.com/2018/7/19/17593186/the-los-angeles-chargers-dont-have-a-single-analytics-employee-nfl). ([@chargers](https://twitter.com/Chargers) you hiring?)
 
 Anyway, I'm a Chargers fan. This year we took Justin Herbert at #6 and at the time I was bummed we didn't get Tua but for now it looks we're doing [just fine](https://www.youtube.com/watch?v=q9NlShd6Xoc). Nothing against the Dolphins, but one of the two is the favorite for Rookie of the Year and the other isn't.
-Also, how can you not love [this](https://www.youtube.com/watch?v=BjJh7HfZHIo)
+Also, [how can you not love this](https://youtu.be/BjJh7HfZHIo?t=10)
 
 Herbert balled out pretty much every week (except vs the Pats) and each week Chargers fans did their part: Herbert won rookie of the week 9 times this year out of a possible 15 (week 1 he didn't play).
 
