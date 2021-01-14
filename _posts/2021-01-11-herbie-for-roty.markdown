@@ -115,7 +115,9 @@ After migrating to ES5 and using more helper functions to help with scoping (bec
 })();
 {% endhighlight%}
 
-I hope this isn't against the rules. I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it. Feel free to copy it and run it yourself in the background.
+I hope this isn't against the rules.
+I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it.
+Feel free to copy it and run it yourself in the background.
 
 ## Go bolts.
 
