@@ -12,20 +12,22 @@ categories: [javascript, football, chargers]
 </p>
 
 I'm not actually sure what the overlap is between football fans and software engineers. There must be some, at least with how aggressively the NFL is advertising AWS.
-Plus you've got people on Reddit doing data analysis to come up with goofy stats, (and [photoshops](https://www.reddit.com/r/Chargers/comments/kvy2k8/the_little_guys/)).
+You've got some crowd out there using some form of SQL to do data analysis to come up with stats like [these](https://twitter.com/JarrettTSutton/status/1333599792858099713).
 And teams have analytics departments as well. [Or at least they fucking should](https://www.boltsfromtheblue.com/2018/7/19/17593186/the-los-angeles-chargers-dont-have-a-single-analytics-employee-nfl). ([@chargers](https://twitter.com/Chargers) you hiring?)
 
-Anyway, I'm a Chargers fan. This year we took Justin Herbert at #6 and at the time I was bummed we didn't get Tua but for now it looks we're doing just fine. Nothing against the Dolphins, but one of the two is a candidate for Rookie of the Year and the other isn't.
+Anyway, I'm a Chargers fan. This year we took Justin Herbert at #6 and at the time I was bummed we didn't get Tua but for now it looks we're doing [just fine](https://www.youtube.com/watch?v=q9NlShd6Xoc). Nothing against the Dolphins, but one of the two is the favorite for Rookie of the Year and the other isn't.
+Also, how can you not love [this](https://www.youtube.com/watch?v=BjJh7HfZHIo)
 
 Herbert balled out pretty much every week (except vs the Pats) and each week Chargers fans did their part: Herbert won rookie of the week 9 times this year out of a possible 15 (week 1 he didn't play).
 
 I would like to do my part too.
 
 # The Idea
-I started by looking into whether I could write a click bot to vote for Justin while I was busy with work. I mostly write in Python, so I figured I'd use it to control the page. The voting is just click, wait, click, wait, refresh, repeat. Seemed easy enough.
+I started by looking into whether I could write a click bot to vote for Justin while I was busy with work. I mostly write in Python for my job, so I figured I'd use it to control the page.
+The voting is just click, wait, click, wait, refresh, repeat. Seemed easy enough.
 Unfortunately the most common tool, pyautogui, doesn't seem to be ready to support Macos big sur yet.
 
-So next option, can I write a script in my browser that'll do the same thing?
+So next option, can I write a script in my browser's console that'll do the same thing?
 The answer is... almost.
 
 # Switching to Javascript
@@ -34,7 +36,7 @@ By inspecting the page source
 
 ![page source](/assets/herbie_roty/inspect_page.png)
 
-I was able to come up with the following and paste it into the devtools console
+I was able to come up with the following and paste it into the devtools repl
 
 {% highlight javascript %}
 let voteForHerbie = () => {
@@ -49,6 +51,7 @@ let voteForHerbie = () => {
 };
 setInterval(voteForHerbie, 1000);
 {% endhighlight%}
+
 Which seems to work for one iteration but has some issues running after reload.
 
 ![error](/assets/herbie_roty/error_cant_click.png)
