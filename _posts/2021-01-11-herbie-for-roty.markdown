@@ -12,7 +12,7 @@ categories: [javascript, football, chargers]
 </p>
 
 I'm not actually sure what the overlap is between football fans and software engineers. There must be some, at least with how aggressively the NFL is advertising AWS.
-Plus you've got people on Reddit doing data analysis to come up with goofy stats, and [photoshops](https://www.reddit.com/r/Chargers/comments/kvy2k8/the_little_guys/).
+Plus you've got people on Reddit doing data analysis to come up with goofy stats, (and [photoshops](https://www.reddit.com/r/Chargers/comments/kvy2k8/the_little_guys/)).
 And teams have analytics departments as well. [Or at least they fucking should](https://www.boltsfromtheblue.com/2018/7/19/17593186/the-los-angeles-chargers-dont-have-a-single-analytics-employee-nfl). ([@chargers](https://twitter.com/Chargers) you hiring?)
 
 Anyway, I'm a Chargers fan. This year we took Justin Herbert at #6 and at the time I was bummed we didn't get Tua but for now it looks we're doing just fine. Nothing against the Dolphins, but one of the two is a candidate for Rookie of the Year and the other isn't.
