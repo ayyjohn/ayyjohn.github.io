@@ -14,7 +14,7 @@ That said, I want to have some options for customization and that involves getti
 I figured an easy place to start would be making tags on my posts. It's light weight, simple, and doesn't require a lot of forethought.
 It also gives me a change to write a `how I did this` style post and experiment a little bit with inserting code and photos of code into my blog. 
 So, without further ado:
-# goals:
+## goals:
 * I want to have tags displayed after each post in the main post list
 * I want to have tags displayed on the post page of each post
 * I want have a page where each tag is displayed along with each post that has that tag (and links to each post)
@@ -47,7 +47,7 @@ Next, before I add any other functionality, I can sanity check some basics by pu
 {% endhighlight %}
 ![Perfection](/assets/adding_tags/unstyled_tags.png)
 
-## Et Voila!
+# Et Voila!
 
 The style leaves something to be desired, so I'll add some minimal SCSS and adjust some of the existing HTML to get it to sit right
 
@@ -68,7 +68,7 @@ The style leaves something to be desired, so I'll add some minimal SCSS and adju
 
 ![Glorious](/assets/adding_tags/styled_tags.png)
 
-## Glorious!
+# Glorious!
 
 I'm not sure if these are the final groups I'll be using, but I'm not making any decisions I can't walk back easily since tags are so easy to change.
 
