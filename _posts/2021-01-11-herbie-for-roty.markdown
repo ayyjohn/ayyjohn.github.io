@@ -5,12 +5,13 @@ date:   2021-01-11 12:20:10 -0800
 permalink: /posts/:title
 categories: [javascript, football, chargers]
 ---
-### tl;dr I wrote a script to vote for Justin Herbert for Rookie of the year.
+*tl;dr: I wrote a script to vote for Justin Herbert for Rookie of the year.*
 
 <p align="center">
 <img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="350px" height="350px"/>
 </p>
 
+## Football + Programming
 I'm not actually sure what the overlap is between football fans and software engineers. There must be some, at least with how aggressively the NFL is advertising AWS.
 You've got some crowd out there using some form of SQL to do data analysis to come up with stats like [these](https://twitter.com/JarrettTSutton/status/1333599792858099713).
 And teams have analytics departments as well. [Or at least they fucking should](https://www.boltsfromtheblue.com/2018/7/19/17593186/the-los-angeles-chargers-dont-have-a-single-analytics-employee-nfl). ([@chargers](https://twitter.com/Chargers) you hiring?)
@@ -22,7 +23,7 @@ Herbert balled out pretty much every week (except vs the Pats) and each week Cha
 
 I would like to do my part too.
 
-# The Idea
+## The Idea
 I started by looking into whether I could write a click bot to vote for Justin while I was busy with work. I mostly write in Python for my job, so I figured I'd use it to control the page.
 The voting is just click, wait, click, wait, refresh, repeat. Seemed easy enough.
 Unfortunately the most common tool, pyautogui, doesn't seem to be ready to support Macos big sur yet.
@@ -30,7 +31,7 @@ Unfortunately the most common tool, pyautogui, doesn't seem to be ready to suppo
 So next option, can I write a script in my browser's console that'll do the same thing?
 The answer is... almost.
 
-# Switching to Javascript
+## Switching to Javascript
 
 By inspecting the page source
 
@@ -62,7 +63,7 @@ Basically, when I was using the devtools to select the page element to find the 
 I was able to at least get it to run once by selecting this scope manually before pasting it, but there was a second problem:
 You can't set an interval to do something with refreshing involved because the refresh resets the repl's scope even if you set it not to clear while changing pages.
 
-# Running Through Refreshes
+## Running Through Refreshes
 
 So there's two options I can think of:
 
@@ -119,7 +120,7 @@ I hope this isn't against the rules.
 I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it.
 Feel free to copy it and run it yourself in the background.
 
-## Go bolts.
+# Go bolts.
 
 <p align="center">
 <img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="450px" height="450px"/>
