@@ -7,7 +7,9 @@ categories: [javascript, football, chargers]
 ---
 ### tl;dr I wrote a script to vote for Justin Herbert for Rookie of the year.
 
-<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif"/>
+<p align="center">
+<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="350px" height="350px"/>
+</p>
 
 I'm not actually sure what the overlap is between football fans and software engineers. There must be some, at least with how aggressively the NFL is advertising AWS.
 Plus you've got people on Reddit doing data analysis to come up with goofy stats, and [photoshops](https://www.reddit.com/r/Chargers/comments/kvy2k8/the_little_guys/).
@@ -74,9 +76,9 @@ I suspected this the scope issue again, so instead of telling it to fire on the 
 
 ![iframe](/assets/herbie_roty/iframe.png)
 
-And it worked!
+And it worked! Or, at least, it tried to run and immediately threw a ton of syntax errors. Turns out Tampermonkey only supports ES5.
 
-After migrating to ES5 (because that's all Tampermonkey supports), and using more helper functions to help with scoping (because now I don't have fat arrow functions) I came up with the following.
+After migrating to ES5 and using more helper functions to help with scoping (because now I don't have fat arrow functions) I came up with the following.
 
 {% highlight javascript %}
 // ==UserScript==
@@ -114,4 +116,6 @@ I hope this isn't against the rules. I set it to vote every 4 seconds which seem
 
 ## Go bolts.
 
-<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif"/>
+<p align="center">
+<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="350px" height="350px"/>
+</p>
