@@ -72,7 +72,7 @@ But this actually seems like a perfect use case. Using the `@match` keyword you 
 
 I was able to get the script to run, but it wasn't working. It wasn't able to find the elements I told it to look for that it had been able to prior.
 
-I suspected this the scope issue again, so instead of telling it to fire on the NFL's vote page URL, I gave it [https://www.riddle.com/a/290378](https://www.riddle.com/a/290378), which is the href from the iframe on the voting page.
+I suspected this was the scope issue again, so instead of telling it to fire on the NFL's vote page URL, I gave it [https://www.riddle.com/a/290378](https://www.riddle.com/a/290378), which is the href from the iframe on the voting page.
 
 ![iframe](/assets/herbie_roty/iframe.png)
 
