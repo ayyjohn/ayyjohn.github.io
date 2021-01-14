@@ -122,5 +122,5 @@ Feel free to copy it and run it yourself in the background.
 ## Go bolts.
 
 <p align="center">
-<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="350px" height="350px"/>
+<img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="450px" height="450px"/>
 </p>
