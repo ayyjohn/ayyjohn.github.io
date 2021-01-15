@@ -26,7 +26,7 @@ I would like to do my part too.
 ## The Idea
 I started by looking into whether I could write a click bot to vote for Justin while I was busy with work. I mostly write in Python for my job, so I figured I'd use it to control the page.
 The voting is just click, wait, click, wait, refresh, repeat. Seemed easy enough.
-Unfortunately the most common tool, pyautogui, doesn't seem to be ready to support Macos big sur yet.
+Unfortunately the most common tool, [pyautogui](https://pyautogui.readthedocs.io/en/latest/), doesn't seem to be ready to support Macos big sur yet.
 
 So next option, can I write a script in my browser's console that'll do the same thing?
 The answer is... almost.
