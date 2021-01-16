@@ -7,7 +7,7 @@ categories: [twitter, football, chargers, bots, python]
 ---
 [Earlier this week I wrote a post about a script I wrote to vote for Justin Herbert for Rookie of the Year](/posts/herbie-for-roty)
 
-Someone in the Chargers subreddit suggested I write a bot to vote for Isaac Rochell for Walter Payton Man of the Year.
+[Someone in the Chargers subreddit suggested](https://www.reddit.com/r/Chargers/comments/kx8scb/i_wrote_a_script_that_votes_for_justin_herbert/gj8vzj4/) I write a bot to vote for Isaac Rochell for Walter Payton Man of the Year.
 
 <p align="center">
 <img src='/assets/rochelle_moty/good_idea.gif' width="350px" height="350px"/>
@@ -110,7 +110,7 @@ Looks like that works too.
 ![unique_tweets](/assets/rochelle_moty/testing_unique_tweets.png)
 
 ### Let's bring her home, boys. 
-I added a list of as many chargers roster players as I could think of, as well as some phrases such as "ASAP!" and "#Jackboyz" that could be used to make the tweets unique. Then I made it so it would use multiple in each tweet so that the uniqueness was increased to `35 * 7 * 35 * 6 * 6` possible tweets.
+I added a list of as many chargers roster players as I could think of, as well as some phrases such as "ASAP!" and "#Jackboyz" that could be used to make the tweets unique. Then I made it so it would use multiple in each tweet so that the total was increased to `35 * 35 * 7 * 6 * 6` possible tweets.
 {% highlight python %}
 for i in range(1000):
     name_one = random.choice(names)
