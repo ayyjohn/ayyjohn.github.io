@@ -24,6 +24,7 @@ github_username:  ayyjohn
 linkedin_username:  ayyjohn
 show_excerpts: true
 permalink: pretty
+google_analytics: G-RL5JRCRDQF
 
 # Build settings
 markdown: kramdown
