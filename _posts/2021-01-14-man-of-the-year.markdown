@@ -15,17 +15,17 @@ categories: [twitter, football, chargers, bots, python]
 
 # Getting Started
 
-The difference between this post and the former is the vote method.
+The difference between this contest and the former is the vote method.
 
-Last post was about clicking. This was about tweeting.
+To vote for Pepsi Rookie of the Year requires clicking. Walter Payton Man of the Year is done by tweets with a hashtag.
 
 Python's got a [Twitter bot API](https://docs.tweepy.org/en/latest/index.html) and this time I'm prepped to use it. Fuck javascript. This is Python territory.
 
-There are some minor API restrictions. I'll do my best not to break those and get banned.
+Twitter's bot API has a few restrictions. I'll do my best not to break those and get banned.
 
 [Rochelle's currently in second place to Travis Kelce, and within striking difference](https://www.nfl.com/honors/man-of-the-year/).
 
-As I write this, he's down by 336,397 votes and the vote closes in 36 hours. 
+As I write this, he's down by 336,397 votes and the vote closes in 36 hours.
 
 That's about 156 votes per minute. That's more than enough to get my account blocked from twitter so I won't do that.
 
@@ -75,7 +75,7 @@ api.update_status (status='testing update status')
 
 ![first_tweet](/assets/rochelle_moty/first_test_tweet.png)
 
-looks like that works. Now how about more than one tweet? There are a couple of options. One is to set my script to run on a CRON job and let my computer do the automation. The other, much simpler way, is to just use a loop in Python and have my script sleep in between tweeting. That will also let me have finer grained control over the content of the tweet because I'll have access to iteration variables. 
+looks like that works. Now how about more than one tweet? There are a couple of options. One is to set my script to run on a CRON job and let my computer do the automation. The other, much simpler way, is to just use a loop in Python and have my script sleep in between tweeting. That will also let me have finer grained control over the content of the tweet because I'll have access to iteration variables.
 
 To start, I tried re-running the script exactly how it was and it threw the following exception
 
@@ -109,7 +109,7 @@ Looks like that works too.
 
 ![unique_tweets](/assets/rochelle_moty/testing_unique_tweets.png)
 
-### Let's bring her home, boys. 
+### Let's bring her home, boys.
 I added a list of as many chargers roster players as I could think of, as well as some phrases such as "ASAP!" and "#Jackboyz" that could be used to make the tweets unique. Then I made it so it would use multiple in each tweet so that the total was increased to `35 * 35 * 7 * 6 * 6` possible tweets.
 {% highlight python %}
 for i in range(1000):
@@ -129,8 +129,17 @@ for i in range(1000):
     time.sleep(5)
 {% endhighlight %}
 
-Even with `308700` possible unique tweets, I still need to make sure my script doesn't stop if there's a transient error or I get unlucky and the status is a duplicate. That's what the error handling is for.
+Even with `308700` possible unique tweets, I still need to make sure my script doesn't stop if there's a transient error or I get unlucky and the status is a duplicate. That's what the error handling is for. Also, I recognize that this will technically over-report the number of tweets because I increment the iterator regardless. I'm okay with this.
 
 [Here's the link to the account](https://twitter.com/Walter58528553)
 
 # Bolt Up
+
+**update**
+
+it appears twitter has a max number of tweets per day and that I burned through that in about 5 minutes.
+```
+failed to tweet because[{'code': 185, 'message': 'User is over daily status update limit.'}]
+```
+
+That's probably for the best
