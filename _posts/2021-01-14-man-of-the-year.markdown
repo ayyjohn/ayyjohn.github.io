@@ -27,6 +27,8 @@ Twitter's bot API has a few restrictions. I'll do my best not to break those and
 
 As I write this, he's down by 336,397 votes and the vote closes in 36 hours.
 
+![first_tweet](/assets/rochelle_moty/current_vote.png)
+
 That's about 156 votes per minute. That's more than enough to get my account blocked from twitter so I won't do that.
 
 But what I will do is outline the steps I took so that if you're interested, you can make your own bot to do the same.
