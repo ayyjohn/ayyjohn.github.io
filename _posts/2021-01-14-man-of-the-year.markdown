@@ -72,7 +72,7 @@ do a quick cmd-f through [the official rules](https://static.www.nfl.com/league/
 do a basic test to confirm you're up and running
 
 {% highlight python %}
-api.update_status (status='testing update status')
+api.update_status(status='testing update status')
 {% endhighlight %}
 
 ![first_tweet](/assets/rochelle_moty/first_test_tweet.png)
