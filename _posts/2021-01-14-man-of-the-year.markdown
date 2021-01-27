@@ -25,7 +25,7 @@ Twitter's bot API has a few restrictions. I'll do my best not to break those and
 
 [Rochelle's currently in second place to Travis Kelce, and within striking difference](https://www.nfl.com/honors/man-of-the-year/).
 
-As I write this, he's down by 336,397 votes and the vote closes in 36 hours.
+As I write this, he's down by 234,111 votes and the vote closes in 36 hours.
 
 ![first_tweet](/assets/rochelle_moty/current_vote.png)
 
