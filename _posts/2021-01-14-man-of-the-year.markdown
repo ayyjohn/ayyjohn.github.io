@@ -5,8 +5,7 @@ date:   2021-01-16 10:15:10 -0800
 permalink: /posts/:title
 categories: [twitter, football, chargers, bots, python]
 ---
-[Earlier this week I wrote a post about a script I wrote to vote for Justin Herbert for Rookie of the Year](/posts/herbie-for-roty)
-
+[Earlier this week I wrote a post about a script I wrote to vote for Justin Herbert for Rookie of the Year](/posts/herbie-for-roty).
 [Someone in the Chargers subreddit suggested](https://www.reddit.com/r/Chargers/comments/kx8scb/i_wrote_a_script_that_votes_for_justin_herbert/gj8vzj4/) I write a bot to vote for Isaac Rochell for Walter Payton Man of the Year.
 
 <p align="center">
