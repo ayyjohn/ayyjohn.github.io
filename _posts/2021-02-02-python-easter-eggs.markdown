@@ -6,7 +6,6 @@ date:   2021-02-02 11:00:17 -0800
 permalink: /posts/:title
 categories: [meta, python]
 ---
-## Easter Eggs in Python
 Most people are familiar with the most famous Python standard lib easter eggs.
 Things like The Zen of Python being available by typing `import this`.
 Or the [XKCD comic](https://xkcd.com/353/) you can open by typing `import antigravity`.
