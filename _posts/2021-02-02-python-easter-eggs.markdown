@@ -4,7 +4,7 @@ title:  "Baby's Intro to the CPython Source Code"
 alternate-title:  "Fun in Programming (maybe as a followup post)"
 date:   2021-02-02 11:00:17 -0800
 permalink: /posts/:title
-categories: [meta, python]
+categories: [python]
 ---
 Most people are familiar with the most famous Python standard lib easter eggs.
 Things like The Zen of Python being available by typing `import this`.
