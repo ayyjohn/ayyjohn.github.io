@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Debugging a Broken Reddit"
-date:   2021-02-15 19:21:07 -0800
+date:   2021-02-15 18:21:07 -0800
 permalink: /posts/:title
 categories: [tampermonkey, javascript, jquery]
 ---
