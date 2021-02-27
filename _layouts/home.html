@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
-    {%- for post in site.posts -%}
+    {%- for post in paginator.posts -%}
     <li>
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -33,7 +33,22 @@ layout: default
     {%- endfor -%}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        &#60;-- Newer
+      </a>
+    {% else %}
+      <span class="previous">&#60;-- Newer</span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Older --&#62;</a>
+    {% else %}
+      <span class="next ">Older --&#62;</span>
+    {% endif %}
+  </div>
   {%- endif -%}
+  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
