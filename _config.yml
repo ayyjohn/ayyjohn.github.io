@@ -25,6 +25,8 @@ linkedin_username:  ayyjohn
 show_excerpts: true
 permalink: pretty
 google_analytics: UA-186384735-1
+paginate: 5
+paginate_path: "/page_:num/"
 
 # Build settings
 markdown: kramdown
