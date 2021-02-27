@@ -40,12 +40,12 @@ layout: default
         &#60;-- Newer
       </a>
     {% else %}
-      <span class="previous">&#60;-- Newer</span>
+      <span class="previous previous-hidden">&#60;-- Newer</span>
     {% endif %}
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="next">Older --&#62;</a>
     {% else %}
-      <span class="next ">Older --&#62;</span>
+      <span class="next next-hidden">Older --&#62;</span>
     {% endif %}
   </div>
   {%- endif -%}

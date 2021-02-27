@@ -185,8 +185,16 @@
   margin-right: 5em;
 }
 
+.previous-hidden {
+  visibility: hidden;
+}
+
 .next {
   margin-left: 5em;
+}
+
+.next-hidden {
+  visibility: hidden;
 }
 
 
