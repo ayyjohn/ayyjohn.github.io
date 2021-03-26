@@ -104,6 +104,8 @@ which leads us to this monstrosity
 {% highlight python %}
 >>> l = 10,
 >>> x ,= l
+>>> l
+(10,)
 >>> x
 10
 {% endhighlight %}
