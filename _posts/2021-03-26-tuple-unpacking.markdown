@@ -97,7 +97,7 @@ oh lord.
 10
 {% endhighlight %}
 
-and as you may or may not know, whitespace in some cases in Python can be ignored: `[10, 11, 12] == [10,11,12]`
+and as you may know, whitespace in some cases in Python can be ignored: `[10, 11, 12] == [10,11,12]`
 
 which leads us to this monstrosity
 
