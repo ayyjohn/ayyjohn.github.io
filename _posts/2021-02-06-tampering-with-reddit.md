@@ -97,7 +97,7 @@ With a quick search I was able to find other people encountering the same proble
 
 It looks like nothing changed, but actually, it has! There's two links there, smushed right next to each other. And by clicking on either of them, I can tell that one does indeed go to `r/gaming` and the second goes to `r/gaming/top` which is great.
 
-## Cleaning Up 
+## Cleaning Up
 By adding a 3px `marginRight` to the `style` of the original element I can split the two apart so that it looks a little nicer.
 The one thing that's missing is that on line 16 I added `"/top"` to the end of the `textContent` of the original element for the new element. So I expected it to be `r/gaming/top`, not just `/top`.
 It turns out that `HTMLElement.cloneNode()` has a parameter, `deep` that defaults to `true`, which means the textContent isn't getting copied. So with one final change, here's the final script
