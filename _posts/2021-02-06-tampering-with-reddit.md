@@ -11,7 +11,7 @@ Using TamperMonkey for [my recent post about messing with the Pepsi ROTY vote](/
 I often recommend new potential programmers who aren't sure coding is for them try JavaScript (over Python) specifically because it allows you to immediately jump in, either via the Chrome Devtools console, or things like UserScripts, and mess with web pages for real. Silly things like removing elements of a page or changing how a button behaves can really give you that HackerMan&trade; feel, even if you've been coding for a while.
 
 ## Automating Things for the Sake of Automating
-Today I got around to thinking about a minor improvement to my life that 100% conforms to the "why do something minorly inconvenient in six seconds when I could spend 30 minutes automating" mindset.
+Today I got around to thinking about a minor improvement to my life that 100% conforms to the "why do something mildly inconvenient in six seconds when I could spend 30 minutes automating" mindset.
 
 I'm a fogie, by which I mean I still use old.reddit.com. I hate the new design for a lot of reasons, especially visually, but I specifically love the old design because it works with [https://redditenhancementsuite.com/](Reddit Enhancement Suite). One thing I really love about RES is its keyboard shortcuts. I'm a big fan of [Vimium] but RES works way better, so I disable Vimium on Reddit. One of the best keyboard shortcuts is the one that lets you jump to a subreddit from r/all. However, 99.9% of the time when I use that keyboard shortcut it's to go to a sub I just found and the first thing I have to do is use my mouse to the top of the page to select `top of all time`. Can't have that.
 
