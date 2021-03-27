@@ -41,7 +41,7 @@ This question can be reduced to the combination of three other questions
 3. Are there any actors with those names?
 
 One thing I love about the internet is that if you have a question, probably somebody has already had it before.
-However, a few quick Google searches reveal that this hasn't been asked on Quora or Reddit before. Someone _has_ created [a Python module for elements](https://pypi.org/project/PeriodicElements/), though, and someone _has_ created [a database of common first and last names](https://github.com/smashew/NameDatabase), and IMDb will let us look for actors given a name, too. So now all I needed to do was aggregate those three together.
+However, a few quick Google searches reveal that this hasn't been asked on Quora or Reddit before. Someone _has_ created [a Python module for elements](https://pypi.org/project/PeriodicElements/), though, and someone _has_ created [a database of common first and last names](https://github.com/smashew/NameDatabases), and IMDb will let us look for actors given a name, too. So now all I needed to do was aggregate those three together.
 
 Here's what I came up with
 {% highlight python %}

@@ -11,7 +11,6 @@ Or something like that.
 I'm still coming up with good things to write for my first post, so check back soon for actual content.
 
 Meanwhile, did you know tuple unpacking in Python (and other languages) supports nesting?
-
 {% highlight python %}
 >>> t = (0, (1, 2))
 >>> a, b, c = t

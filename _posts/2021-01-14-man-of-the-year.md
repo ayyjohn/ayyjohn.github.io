@@ -12,7 +12,7 @@ categories: [twitter, football, chargers, bots, python]
 <img src='/assets/rochelle_moty/good_idea.gif' width="350px" height="350px"/>
 </p>
 
-# Getting Started
+## Getting Started
 
 The difference between this contest and the former is the vote method.
 
@@ -134,7 +134,7 @@ Even with `308700` possible unique tweets, I still need to make sure my script d
 
 [Here's the link to the account](https://twitter.com/Walter58528553)
 
-# Bolt Up
+## Bolt Up
 
 **update**
 

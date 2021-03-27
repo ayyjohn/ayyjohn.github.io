@@ -51,7 +51,7 @@ If you have a remote server somewhere, even if you have a custom domain and so d
 ## 5. Python Scripts
 This one took me way too long to figure out. I recognized the SheBang at the top of `BASH` files, you know
 
-```
+```bash
 #!/bin/bash
 ```
 
@@ -59,32 +59,32 @@ but I hadn't spent enough time considering the implications of putting other thi
 
 It really opened stuff up for me when I realized that you could do
 
-```
+```bash
 #!/bin/python3
 ```
 
 and then write scripts and have them be executable just by `chmod +x`ing the file. The thing that really makes this useful, though, is creating a directory for these and adding it to your path. That essentially means the scripts are in scope at all times.
 Somewhere like
 
-```
+```bash
 ~/scripts_bin/
 ```
 
 An example of this type of thing: At work we use [Bazel](https://bazel.build/) to control build dependencies which means when you want to run a test, instead of using `pytest` you use `bzl test {target}`. In _almost_ every case the target is the path to the file, minus `.py` and with a `:` instead of a `/` before the last file. So to run the tests in
 
-```
+```bash
 src/cash/invoices/invoice_tests.py
 ```
 
 I would do
 
-```
-mbzl test src/cash/invoices:invoice_tests
+```bash
+bazel test src/cash/invoices:invoice_tests
 ```
 
 This gets cumbersome, so I'd rather do
 
-```
+```bash
 t src/cash/invoices/invoice_tests.py`
 ```
 

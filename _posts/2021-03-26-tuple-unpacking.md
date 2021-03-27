@@ -102,7 +102,7 @@ and as you may know, whitespace in some cases in Python can be ignored:
 `[10, 11, 12] == [10,11,12]`
 
 which leads us to this monstrosity
-
+<!-- markdownlint-disable MD037 -->
 {% highlight python %}
 >>> l = 10,
 >>> x ,= l
@@ -111,5 +111,6 @@ which leads us to this monstrosity
 >>> x
 10
 {% endhighlight %}
+<!-- markdownlint-enable MD037 -->
 
 _sigh_
