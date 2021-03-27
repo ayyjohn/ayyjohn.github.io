@@ -22,6 +22,7 @@ So for example, Aaron Paul becomes A**Ar**on Paul because they inserted `Ar` for
 And that got me wondering whether there are reasonable names that you can't put elemental symbols in.
 
 ## The Question
+
 What would happen if somebody had auditioned for a part in Breaking Bad but they were denied the role because their name couldn't be "elementified"?
 
 ![periodic table](/assets/max_dell/periodic_table.png)
@@ -35,6 +36,7 @@ Then there are rude elements like Thorium and Arsenic that take away a whole bun
 All this is to say that it didn't feel easy to come up with any off the top of my head, so I decided to use programming to answer the question.
 
 ## Switching to Code
+
 This question can be reduced to the combination of three other questions
 1. What are all possible first and last names,
 2. Which of them do not contain an elemental symbol

@@ -16,6 +16,7 @@ One of my favorite periods during work is when a new person is onboarding to the
 My favorites are when I'm showing them how to do something and they notice a shortcut or alias that I use and either they haven't seen it or they know a better way. In the spirit of things like that, I'm going to post some of my favorite "Quality of Life Aliases" that help my productivity when I'm coding or just generally using my computer.
 
 ## 1. Better CD
+
 {% highlight BASH %}
 c () {
   cd "$@" && ls;
@@ -25,6 +26,7 @@ c () {
 This one works on `BASH` and `ZSH` both. It comes from the thought process of "how often do I `cd` and not immediately `ls` afterward?". It's got the added benefit of saving a character, and there are plenty of similar aliases you could do just to turn a longer command into a shorter one. This one combines two of the most common commands I'd use on a daily basis, and sometimes the biggest wins come from a smaller optimization of a common thing than a big time gain on something less used.
 
 ## 2. Startup Scripts
+
 Sometimes when you're working on a project there's some setup that you have to do every time you work on it. This could include things like opening your editor, activating a virtual environment, starting a server, sourcing an `ENV` file, and more.
 These can easily be combined into one alias that you can just call to get to work. You can do one better by having that command take you to the directory you need or activating whenever you enter that directory using tools or some fancy scripting.
 
@@ -35,6 +37,7 @@ alias start="bundle exec jekyll serve --livereload"
 {% endhighlight %}
 
 ## 3. Path Update
+
 {% highlight BASH %}
 alias path="export PATH=$PATH:$(pwd)"
 {% endhighlight %}
@@ -42,6 +45,7 @@ alias path="export PATH=$PATH:$(pwd)"
 This one's pretty self explanatory but I like it a lot. It adds the current directory to the current path. The reason I like it is because it's less about reducing typing and more that it's the type of operation that I don't do quite often enough not to have to Google it whenever I need it. This helps me just need to remember "something ... path" and I'm there.
 
 ## 4. SSHing
+
 {% highlight BASH %}
 alias website="ssh -i ~/.ssh/whatever.pem ayyjohn@some-ip.us-west-2.compute.amazonaws.com"
 {% endhighlight %}
@@ -49,6 +53,7 @@ alias website="ssh -i ~/.ssh/whatever.pem ayyjohn@some-ip.us-west-2.compute.amaz
 If you have a remote server somewhere, even if you have a custom domain and so don't need to remember the IP, this one comes in handy a lot anyway. Having one for each of the servers I SSH onto for personal use and one for each of the prod shells at work makes a real difference.
 
 ## 5. Python Scripts
+
 This one took me way too long to figure out. I recognized the SheBang at the top of `BASH` files, you know
 
 ```bash
@@ -92,4 +97,5 @@ and have the computer handle the parsing for me, especially because then I get t
 
 
 ## Feedback
+
 What do you think? Were any of these inspirations for you to make your own? Were they helpful? Email me some of your favorites, I'm always looking for new ones.

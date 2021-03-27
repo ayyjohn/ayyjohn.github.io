@@ -17,6 +17,7 @@ to your `_config.yml` it'll just work like magic. It's not _that_ easy, but it's
 To break it down into steps, it's
 
 ## 1. Add pagination configs to your config
+
 Technically all you need to add in your `_config.yml` is the `paginate` keyword which controls how many posts per page, but unless you add a custom `paginate_path:` it'll default to `paginate_path: "/page:num/"` which will render `page2`, `page3`, `...`.
 I went with the following
 ```yaml
@@ -26,6 +27,7 @@ paginate_path: "/page_:num/"
 probably because I'm a Python guy. I like my underscores.
 
 ## 2. Make sure you have an index.html
+
 By default, Jekyll projects come with an `index.md` which will cause you to get the following warning in your logs
 ```bash
 Pagination: Pagination is enabled, but I couldn't find an index.html page to use as the pagination template. Skipping pagination.
@@ -38,6 +40,7 @@ layout: home
 ```
 
 ## 3. Change the way you render posts
+
 On your home page you likely have something that looks like
 {% highlight liquid %}
 {% raw %}
@@ -58,6 +61,7 @@ By replacing site with `paginator` our site will start automatically rendering `
 {% endhighlight %}
 
 ## 4. Add Navigation Links
+
 This one you can take directly from the Jekyll documentation linked above. It creates links to newer and older posts if there are newer or older posts available
 {% highlight liquid %}
 {% raw %}
@@ -85,6 +89,7 @@ This one you can take directly from the Jekyll documentation linked above. It cr
 If there aren't older posts, it'll just add the text `Next` but it won't be clickable. That's something you can choose to fix in CSS if you like. You can also change what the link text is, I went with `Older -->` and `<-- Newer`.
 
 ## 5. Style the Navigation Links (Optional)
+
 Personally, it bothers me that the Newer text is there on the first page, and that the Older text is there on the last page. I'd rather not see them at all. Unfortunately, if you just choose not to render anything, the links will move around because of spacing. There's plenty of ways around this, but I personally like this one.
 
 The code already knows whether or not there is a page to go to, so the conditional is already taken care of.

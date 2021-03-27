@@ -33,9 +33,11 @@ That's about 156 votes per minute. That's more than enough to get my account blo
 But what I will do is outline the steps I took so that if you're interested, you can make your own bot to do the same.
 
 ### Step 1
+
 Go sign up for a twitter dev account [here](https://developer.twitter.com/en). Grab your API keys for the next step.
 
 ### Step 2
+
 Get basic authentication working. Make sure to give your bot read and write access to your account in your twitter settings.
 
 *Also make sure not to commit your credentials in git. Use environment variables or a git-ignored creds file*
@@ -65,9 +67,11 @@ except Exception as e:
 {% endhighlight %}
 
 ### Step 3
+
 do a quick cmd-f through [the official rules](https://static.www.nfl.com/league/content/2020-WPMOY-Charity-Challenge-Rules_at4dlj.pdf) to make sure you're not about to get him disqualified or anything.
 
 ### Step 4
+
 do a basic test to confirm you're up and running
 
 {% highlight python %}
@@ -111,6 +115,7 @@ Looks like that works too.
 ![unique_tweets](/assets/rochelle_moty/testing_unique_tweets.png)
 
 ## Let's bring her home, boys
+
 I added a list of as many chargers roster players as I could think of, as well as some phrases such as "ASAP!" and "#Jackboyz" that could be used to make the tweets unique. Then I made it so it would use multiple in each tweet so that the total was increased to `35 * 35 * 7 * 6 * 6` possible tweets.
 {% highlight python %}
 for i in range(1000):

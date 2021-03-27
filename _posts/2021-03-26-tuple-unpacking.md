@@ -9,6 +9,7 @@ Sometimes you run across something in Python that looks like it should generate 
 Here's a monstrosity I ran into this morning.
 
 ## Tuples in Python
+
 I've always found tuples and tuple unpacking in Python to behave more than a little strangely.
 
 For example, it's a pretty common accident to include an extra comma and find out that rather than

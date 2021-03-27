@@ -16,6 +16,7 @@ Some are kind of hard to discover without actually inspecting the source though.
 At the start of COVID I was working on a SQLAlchemy project and realized I knew precious little about how SQL databases work, so I decided to go about building my own mini SQLite. ([Code if you're interested](https://github.com/ayyjohn/ayysql))
 
 ## Cloning and Modifying Source Code
+
 While I was looking into how SQL stores things in pages I came across Julia Evans' [blog post about SQLite](https://jvns.ca/blog/2014/09/27/how-does-sqlite-work-part-1-pages/) where she clones the source code, manually re-builds it, and runs it so that she can observe some internal behavior. I couldn't believe I'd never thought to do this type of thing myself.
 
 I cloned the [cPython source](https://github.com/python/cpython) and went about inserting some print statements to watch the code execute. This really helped me grasp some of the concepts I'd heard about in tours of the CPython virtual machine.
@@ -24,6 +25,7 @@ Then I realized that since I was looking at the entire CPython source code, ever
 Here's a other couple things I found.
 
 ## My own Easter Egg Hunt
+
 The first thing I thought to go looking for was the code for The Zen of Python. Since it's part of the standard library, the code for `import this` must be there somewhere so I went looking for it.
 I searched the first line of the poem: "Beautiful is better than ugly", but all that turned up was some test files and a docstring for `difflib`.
 Then I realized, because of Python's import mechanism, it would have to be in a file called `this.py` so I searched for that and there it was! It's almost like they were deliberately trying to avoid people doing what I had done on my first try.

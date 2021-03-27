@@ -12,6 +12,7 @@ categories: [javascript, football, chargers]
 </p>
 
 ## Football + Programming
+
 I'm not actually sure what the overlap is between football fans and software engineers. There must be some, at least with how aggressively the NFL is advertising AWS.
 You've got some crowd out there using some form of SQL to do data analysis to come up with stats like [these](https://twitter.com/JarrettTSutton/status/1333599792858099713).
 And teams have analytics departments as well. [Or at least they fucking should](https://www.boltsfromtheblue.com/2018/7/19/17593186/the-los-angeles-chargers-dont-have-a-single-analytics-employee-nfl). ([@chargers](https://twitter.com/Chargers) you hiring?)
@@ -24,6 +25,7 @@ Herbert balled out pretty much every week (except vs the Pats) and each week Cha
 I would like to do my part too.
 
 ## The Idea
+
 I started by looking into whether I could write a click bot to vote for Justin while I was busy with work. I mostly write in Python for my job, so I figured I'd use it to control the page.
 The voting is just click, wait, click, wait, refresh, repeat. Seemed easy enough.
 Unfortunately the most common tool, [pyautogui](https://pyautogui.readthedocs.io/en/latest/), doesn't seem to be ready to support Macos big sur yet.

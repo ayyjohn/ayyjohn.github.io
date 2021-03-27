@@ -14,22 +14,27 @@ That said, I want to have some options for customization and that involves getti
 I figured an easy place to start would be making tags on my posts. It's light weight, simple, and doesn't require a lot of forethought.
 It also gives me a change to write a `how I did this` style post and experiment a little bit with inserting code and photos of code into my blog.
 So, without further ado:
+
 ## goals
+
 * I want to have tags displayed after each post in the main post list
 * I want to have tags displayed on the post page of each post
 * I want have a page where each tag is displayed along with each post that has that tag (and links to each post)
 * I want the tags to link to the page where all the tags are listed, and if they can link to specifically where on the page that tag is, that'd be ideal
 
 first, we'll need to add some test tags to our posts so that we can tell how we're doing
+
 <!-- markdownlint-disable MD003 -->
 {% highlight markdown %}
 ---
+
 layout: post
 title:  "Hello World"
 date:   2021-01-02 15:13:18 -0800
 permalink: /posts/:title
 categories: [python, meta]
 ---
+
 {% endhighlight %}
 <!-- markdownlint-enable MD003 -->
 
@@ -83,6 +88,7 @@ Ultimately, here's what I came up with. It's not glorious, but I'll take it.
 {% highlight markdown %}
 {% raw %}
 ---
+
 layout: page
 permalink: /tags/
 title: Categories
