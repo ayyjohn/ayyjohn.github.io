@@ -95,7 +95,6 @@ t src/cash/invoices/invoice_tests.py`
 
 and have the computer handle the parsing for me, especially because then I get to leverage auto-completion.
 
-
 ## Feedback
 
 What do you think? Were any of these inspirations for you to make your own? Were they helpful? Email me some of your favorites, I'm always looking for new ones.

@@ -73,7 +73,6 @@ So there's two options I can think of:
 1. fake refresh by requesting the content again and injecting it into the page using JS
 2. use something that doesn't get reset on refresh to run the script on the page when I'm there
 
-
 The second seemed less involved. I've had [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) installed once or twice and never made much use of it.
 But this actually seems like a perfect use case. Using the `@match` keyword you can set a script run when your browser is on a specific URL, e.g. [the rookie of the year voting page](https://www.nfl.com/voting/rookies/rookie-of-the-year).
 
