@@ -110,7 +110,7 @@ Looks like that works too.
 
 ![unique_tweets](/assets/rochelle_moty/testing_unique_tweets.png)
 
-### Let's bring her home, boys.
+## Let's bring her home, boys
 I added a list of as many chargers roster players as I could think of, as well as some phrases such as "ASAP!" and "#Jackboyz" that could be used to make the tweets unique. Then I made it so it would use multiple in each tweet so that the total was increased to `35 * 35 * 7 * 6 * 6` possible tweets.
 {% highlight python %}
 for i in range(1000):
