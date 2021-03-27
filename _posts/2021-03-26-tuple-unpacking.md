@@ -68,6 +68,7 @@ The most basic example:
 but there's also the convention of using `_` to drop items if you only want one
 
 {% highlight python %}
+<!-- markdownlint-disable MD037 -->
 >>> l = (10, 11)
 >>> x, _ = l
 >>> x
@@ -75,6 +76,7 @@ but there's also the convention of using `_` to drop items if you only want one
 >>> _
 11
 {% endhighlight %}
+<!-- markdownlint-enable MD037 -->
 
 and that underscore is actually a variable, it's just convention for "not needed." You do need _something_ there though, cause if you do
 

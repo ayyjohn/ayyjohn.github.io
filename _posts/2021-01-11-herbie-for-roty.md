@@ -38,7 +38,7 @@ By inspecting the page source
 ![page source](/assets/herbie_roty/inspect_page.png)
 
 I was able to come up with the following and paste it into the devtools repl
-<!-- markdown-lint-disable MD011 -->
+<!-- markdownlint-disable MD011 -->
 {% highlight javascript %}
 let voteForHerbie = () => {
     // herbert is first in the list of candidates
@@ -52,7 +52,7 @@ let voteForHerbie = () => {
 };
 setInterval(voteForHerbie, 1000);
 {% endhighlight%}
-<!-- markdown-lint-enable MD011 -->
+<!-- markdownlint-enable MD011 -->
 
 Which seems to work for one iteration but has some issues running after reload.
 
@@ -85,7 +85,7 @@ And it worked! Or, at least, it tried to run and immediately threw a ton of synt
 
 After migrating to ES5 and using more helper functions to help with scoping (because now I don't have fat arrow functions) I came up with the following.
 
-<!-- markdown-lint-disable MD011 -->
+<!-- markdownlint-disable MD011 -->
 {% highlight javascript %}
 // ==UserScript==
 // @name         Herbie For ROTY
@@ -117,7 +117,7 @@ After migrating to ES5 and using more helper functions to help with scoping (bec
     window.onload = winJustinHerbertROY;
 })();
 {% endhighlight%}
-<!-- markdown-lint-enable MD011 -->
+<!-- markdownlint-enable MD011 -->
 
 I hope this isn't against the rules.
 I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it.
