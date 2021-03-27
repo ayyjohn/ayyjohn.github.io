@@ -11,6 +11,7 @@
         }
     ],
     "aliveStatusCodes": [
+        200,
         403
     ]
 }
