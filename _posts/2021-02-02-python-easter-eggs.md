@@ -63,14 +63,14 @@ The goobers decided to use a [rot13 cypher](https://en.wikipedia.org/wiki/ROT13)
 
 ## Antigravity
 
-After finding the code for the above, my second thought was to go look at the Antigravity module. Since just importing it opens your default web browser I figured it must be just a script that uses `webbrowser.open()` and that is indeed part of what it does, but there's one more thing that you'd probably never know was there unless you either looked at the source or imported it and did 
+After finding the code for the above, my second thought was to go look at the Antigravity module. Since just importing it opens your default web browser I figured it must be just a script that uses `webbrowser.open()` and that is indeed part of what it does, but there's one more thing that you'd probably never know was there unless you either looked at the source or imported it and did
 
 {% highlight python %}
 >>> dir(antigravity)
 ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'geohash', 'hashlib', 'webbrowser']
 {% endhighlight %}
 
-which, if you look carefully, shows that antigravity imports webbrowser (for opening the comic) and also hashlib and geohash. 
+which, if you look carefully, shows that antigravity imports webbrowser (for opening the comic) and also hashlib and geohash.
 
 Except...
 
