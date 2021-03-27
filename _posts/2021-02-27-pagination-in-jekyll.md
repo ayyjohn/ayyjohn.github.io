@@ -8,6 +8,7 @@ categories: [Meta, Jekyll]
 Jekyll's documentation is overall pretty solid, but each time I do something I always feel like there's one or two things I wish I'd known. So each time I modify this blog, I'll probably write a post that's essentially "what I wish I'd had when I set out to do x"
 
 In this case, I finally have enough posts that it feels worthwhile to have pagination. [Jekyll has a page on "how to page"](https://jekyllrb.com/docs/pagination/) and at first glance it seems if you just add
+
 ```yaml
 paginate: 5
 ```
@@ -20,19 +21,24 @@ To break it down into steps, it's
 
 Technically all you need to add in your `_config.yml` is the `paginate` keyword which controls how many posts per page, but unless you add a custom `paginate_path:` it'll default to `paginate_path: "/page:num/"` which will render `page2`, `page3`, `...`.
 I went with the following
+
 ```yaml
 paginate: 5
 paginate_path: "/page_:num/"
 ```
+
 probably because I'm a Python guy. I like my underscores.
 
 ## 2. Make sure you have an index.html
 
 By default, Jekyll projects come with an `index.md` which will cause you to get the following warning in your logs
+
 ```bash
 Pagination: Pagination is enabled, but I couldn't find an index.html page to use as the pagination template. Skipping pagination.
 ```
+
 Luckily, you can just change the name of `index.md` to `index.html` and unless you've heavily modified it, it should get rid of the error immediately. My `index.html` is literally just
+
 ```yaml
 ---
 layout: home
@@ -94,9 +100,11 @@ Personally, it bothers me that the Newer text is there on the first page, and th
 
 The code already knows whether or not there is a page to go to, so the conditional is already taken care of.
 All we need to do is add a custom class to the ones we want to hide
+
 ```html
 <span class="next next-hidden">Older --&#62;</span>
 ```
+
 And then by updating the CSS to the following
 {% highlight CSS %}
 .pagination {
