@@ -12,9 +12,9 @@ Not being able to write using Markdown the last time I tried basically killed th
 That doesn't mean I have no interest in the software side of this blog, I'm an engineer after all. But ultimately it came down to why I was trying to make a blog in the first place, and so this time I opted for something where a lot of the boilerplate was taken care of for me.
 That said, I want to have some options for customization and that involves getting at least a little familiar with the [Liquid](https://shopify.github.io/liquid/) templating language.
 I figured an easy place to start would be making tags on my posts. It's light weight, simple, and doesn't require a lot of forethought.
-It also gives me a change to write a `how I did this` style post and experiment a little bit with inserting code and photos of code into my blog. 
+It also gives me a change to write a `how I did this` style post and experiment a little bit with inserting code and photos of code into my blog.
 So, without further ado:
-## goals:
+## goals
 * I want to have tags displayed after each post in the main post list
 * I want to have tags displayed on the post page of each post
 * I want have a page where each tag is displayed along with each post that has that tag (and links to each post)
@@ -47,7 +47,7 @@ Next, before I add any other functionality, I can sanity check some basics by pu
 {% endhighlight %}
 ![Perfection](/assets/adding_tags/unstyled_tags.png)
 
-# Et Voila!
+## Et Voila
 
 The style leaves something to be desired, so I'll add some minimal SCSS and adjust some of the existing HTML to get it to sit right
 
@@ -68,12 +68,12 @@ The style leaves something to be desired, so I'll add some minimal SCSS and adju
 
 ![Glorious](/assets/adding_tags/styled_tags.png)
 
-# Glorious!
+## Glorious
 
 I'm not sure if these are the final groups I'll be using, but I'm not making any decisions I can't walk back easily since tags are so easy to change.
 
-Next, I want there to be a page where users can go to see all posts by tag. 
-I'll worry about alphabetizing and stuff later, but for now, I'll need a new page which it looks like I can create by simply adding a new top level file called `categories.html`. The basic logic is simple enough, we'll need a main div, and then one div for each category, which again appears to be made available globally via site.categories. 
+Next, I want there to be a page where users can go to see all posts by tag.
+I'll worry about alphabetizing and stuff later, but for now, I'll need a new page which it looks like I can create by simply adding a new top level file called `categories.html`. The basic logic is simple enough, we'll need a main div, and then one div for each category, which again appears to be made available globally via site.categories.
 There's a small gotcha with site.categories in that it's actually a list of lists where each sub-list is a category name followed by the posts that have that category, but we can use `{% capture tag_name %}{{ category | first }}{% endcapture %}` to assign the variable `tag_name` to the first element.
 Ultimately, here's what I came up with. It's not glorious, but I'll take it.
 
