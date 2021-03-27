@@ -21,6 +21,7 @@ So, without further ado:
 * I want the tags to link to the page where all the tags are listed, and if they can link to specifically where on the page that tag is, that'd be ideal
 
 first, we'll need to add some test tags to our posts so that we can tell how we're doing
+<!-- markdownlint-disable MD003 -->
 {% highlight markdown %}
 ---
 layout: post
@@ -30,6 +31,7 @@ permalink: /posts/:title
 categories: [python, meta]
 ---
 {% endhighlight %}
+<!-- markdownlint-enable MD003 -->
 
 I'm using categories over tags because according to the documentation they're largely the same, except categories can be used in paths, while tags cannot.
 I don't want to use them in paths yet, but I might want to someday, and this will make it easier.
@@ -77,6 +79,7 @@ I'll worry about alphabetizing and stuff later, but for now, I'll need a new pag
 There's a small gotcha with site.categories in that it's actually a list of lists where each sub-list is a category name followed by the posts that have that category, but we can use `{% capture tag_name %}{{ category | first }}{% endcapture %}` to assign the variable `tag_name` to the first element.
 Ultimately, here's what I came up with. It's not glorious, but I'll take it.
 
+<!-- markdownlint-disable MD003 -->
 {% highlight markdown %}
 {% raw %}
 ---
@@ -84,6 +87,7 @@ layout: page
 permalink: /tags/
 title: Categories
 ---
+<!-- markdownlint-enable MD003 -->
 
 <div class="posts-by-tag">
     <ul class="tag-post-list">

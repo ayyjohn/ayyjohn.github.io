@@ -102,6 +102,7 @@ By adding a 3px `marginRight` to the `style` of the original element I can split
 The one thing that's missing is that on line 16 I added `"/top"` to the end of the `textContent` of the original element for the new element. So I expected it to be `r/gaming/top`, not just `/top`.
 It turns out that `HTMLElement.cloneNode()` has a parameter, `deep` that defaults to `true`, which means the textContent isn't getting copied. So with one final change, here's the final script
 
+<!-- markdownlint-disable MD034 -->
 {% highlight javascript %}
 // ==UserScript==
 // @name         Reddit All Links
@@ -128,6 +129,7 @@ It turns out that `HTMLElement.cloneNode()` has a parameter, `deep` that default
     addTopLinks();
 })();
 {% endhighlight %}
+<!-- markdownlint-enable MD034 -->
 
 ![working_v2](/assets/tampering_with_reddit/working_v2.png)
 

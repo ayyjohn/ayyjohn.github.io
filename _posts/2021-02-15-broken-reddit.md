@@ -9,7 +9,7 @@ While working on my [last post](/posts/tampering-with-reddit) about running Tamp
 
 I mentioned in that post `I started by trying to do it in jQuery`. It's not hard to do, you just need to add the following to your UserScript.
 
-```
+```javascript
 // @require http://code.jquery.com/jquery-3.5.1.min.js
 ```
 

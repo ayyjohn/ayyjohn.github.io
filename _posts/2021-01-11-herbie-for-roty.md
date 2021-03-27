@@ -85,7 +85,7 @@ And it worked! Or, at least, it tried to run and immediately threw a ton of synt
 
 After migrating to ES5 and using more helper functions to help with scoping (because now I don't have fat arrow functions) I came up with the following.
 
-<!-- markdownlint-disable MD011 -->
+<!-- markdownlint-disable MD011 MD034 -->
 {% highlight javascript %}
 // ==UserScript==
 // @name         Herbie For ROTY
@@ -117,13 +117,13 @@ After migrating to ES5 and using more helper functions to help with scoping (bec
     window.onload = winJustinHerbertROY;
 })();
 {% endhighlight%}
-<!-- markdownlint-enable MD011 -->
+<!-- markdownlint-enable MD011 MD034 -->
 
 I hope this isn't against the rules.
 I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it.
 Feel free to copy it and run it yourself in the background.
 
-# Go bolts
+## Go bolts
 
 <p align="center">
 <img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="450px" height="450px"/>

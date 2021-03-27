@@ -80,8 +80,8 @@ looks like that works. Now how about more than one tweet? There are a couple of 
 
 To start, I tried re-running the script exactly how it was and it threw the following exception
 
-```
-python man_of_the_year.py
+```python
+>>> python man_of_the_year.py
 Authentication OK
 Traceback (most recent call last):
   File "man_of_the_year.py", line 26, in <module>
@@ -139,7 +139,7 @@ Even with `308700` possible unique tweets, I still need to make sure my script d
 **update**
 
 it appears twitter has a max number of tweets per day and that I burned through that in about 5 minutes.
-```
+```python
 failed to tweet because[{'code': 185, 'message': 'User is over daily status update limit.'}]
 ```
 
