@@ -1,0 +1,16 @@
+{
+    "replacementPatterns": [
+        {
+            "pattern": "^/posts/",
+            "replacement": "https://ayyjohn.com/posts/"
+        }
+    ],
+    "ignorePatterns": [
+        {
+            "pattern": "^/assets/*"
+        }
+    ],
+    "aliveStatusCodes": [
+        403
+    ]
+}
