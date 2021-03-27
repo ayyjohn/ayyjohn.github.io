@@ -40,7 +40,9 @@ Go sign up for a twitter dev account [here](https://developer.twitter.com/en). G
 
 Get basic authentication working. Make sure to give your bot read and write access to your account in your twitter settings.
 
+<!-- markdownlint-disable MD036 -->
 *Also make sure not to commit your credentials in git. Use environment variables or a git-ignored creds file*
+<!-- markdownlint-enable MD036 -->
 
 {% highlight python %}
 import json
@@ -141,8 +143,8 @@ Even with `308700` possible unique tweets, I still need to make sure my script d
 
 ## Bolt Up
 
+<!-- markdownlint-disable-next-line MD036 -->
 **update**
-
 it appears twitter has a max number of tweets per day and that I burned through that in about 5 minutes.
 
 ```python

@@ -38,6 +38,7 @@ All this is to say that it didn't feel easy to come up with any off the top of m
 ## Switching to Code
 
 This question can be reduced to the combination of three other questions
+
 1. What are all possible first and last names,
 2. Which of them do not contain an elemental symbol
 3. Are there any actors with those names?

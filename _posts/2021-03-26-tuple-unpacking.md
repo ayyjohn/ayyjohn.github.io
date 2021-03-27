@@ -116,4 +116,6 @@ which leads us to this monstrosity
 {% endhighlight %}
 <!-- markdownlint-enable MD037 -->
 
+<!-- markdownlint-disable MD036 -->
 _sigh_
+<!-- markdownlint-enable MD036 -->
