@@ -5,6 +5,9 @@
         "Bazel",
         "Bromium",
         "Cranston",
+        "DDoS",
+        "Gwern's",
+        "Gwern",
         "Jackboyz",
         "Kelce",
         "Munroe",
@@ -27,6 +30,7 @@
         "covid",
         "coworking",
         "creds",
+        "cyphertext",
         "difflib",
         "ehhh",
         "elementified",
@@ -66,6 +70,8 @@
         "xkcd"
     ],
     "flagWords": [
-        "hte"
+        "hte",
+        "followup",
+        "non-binary"
     ]
 }
