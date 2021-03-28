@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Baby's Intro to the CPython Source Code"
-alternate-title:  "Fun in Programming (maybe as a followup post)"
+alternate-title:  "Fun in Programming (maybe as a follow-up post)"
 date:   2021-02-02 11:00:17 -0800
 permalink: /posts/:title
 categories: [python]
