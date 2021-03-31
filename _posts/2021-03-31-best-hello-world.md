@@ -4,7 +4,7 @@ title:  "The Best Hello World Program"
 alternate-title: "Why I Recommend Python to Beginners"
 date:   2021-03-31 6:21:07 -0800
 permalink: /posts/:title
-categories: [python, volunteering]
+categories: [python]
 ---
 What makes a good "Hello, World!" program?
 
