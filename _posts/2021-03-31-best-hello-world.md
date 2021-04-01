@@ -47,7 +47,7 @@ I still think Python 2.7's Hello World is the cleanest I've ever seen.
 print "Hello, World!"
 {% endhighlight %}
 
-Part of it is that `print` wasn't a normal function in Python2 and so it's missing parentheses, which often confuse people who don't have a math background. Part of it is juts the sheer simplicity of it.
+Part of it is that `print` wasn't a normal function in Python2 and so it's missing parentheses, which often confuse people who don't have a math background. Part of it is just the sheer simplicity of it.
 
 No `\n`, no `;`. The choice of `print` as the function name doesn't require understanding what "the console" is, or what objects are, like JavaScript's does, and is more clear than Ruby's `puts` (though, points to Ruby for cuteness)
 
