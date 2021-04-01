@@ -18,7 +18,7 @@ It's not so often, once you've been programming for a few years, that you get to
 print("Hello, World")
 {% endhighlight %}
 
-and goes "I don't get it", but it really is a pivotal moment in any coder's journey. The resistance they feel in that moment can impact whether or not they decide to continue on with programming at all.
+and goes "I don't get it," but it really is a pivotal moment in any coder's journey. The resistance they feel in that moment can impact whether or not they decide to continue on with programming at all.
 That got me thinking about what the best possible introduction to programming is.
 
 ## The Original
