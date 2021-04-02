@@ -68,8 +68,8 @@ The most basic example:
 
 but there's also the convention of using `_` to drop items if you only want one
 
-{% highlight python %}
 <!-- markdownlint-disable MD037 -->
+{% highlight python %}
 >>> l = (10, 11)
 >>> x, _ = l
 >>> x
