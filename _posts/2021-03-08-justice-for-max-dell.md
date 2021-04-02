@@ -4,7 +4,7 @@ title:  "Being Able to Answer Stupid Questions"
 alternate-title:  "Justice for Max Dell"
 date:   2021-03-08 10:21:07 -0800
 permalink: /posts/:title
-categories: [Python, Random]
+categories: [python, random]
 ---
 One of my favorite things about knowing how to program is the ability it gives me to do really stupid things. Not like, hacking the government or stealing money or anything, just satisfy my brain's silly curiosity.
 

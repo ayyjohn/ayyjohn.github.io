@@ -3,7 +3,7 @@ layout: post
 title:  "Adding Pagination to a Jekyll Blog"
 date:   2021-02-27 10:00:00 -0800
 permalink: /posts/:title
-categories: [Meta, Jekyll]
+categories: [meta, jekyll]
 ---
 Jekyll's documentation is overall pretty solid, but each time I do something I always feel like there's one or two things I wish I'd known. So each time I modify this blog, I'll probably write a post that's essentially "what I wish I'd had when I set out to do x"
 
