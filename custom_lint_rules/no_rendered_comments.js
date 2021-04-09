@@ -4,16 +4,16 @@ const {
   inlineCommentRe,
 } = require("markdownlint-rule-helpers");
 
-const start_highlight_text = "{% highlight ";
-const end_highlight_text = "{% endhighlight %}";
+const start_highlight = /{% highlight \w+ %}/;
+const end_highlight = "{% endhighlight %}";
 
 const noRenderedComments = (params, onError) => {
   let insideHighlightBlock = false;
   forEachLine(getLineMetadata(params), (line, lineIndex) => {
-    if (line && line.includes(start_highlight_text)) {
+    if (line && start_highlight.test(line)) {
       insideHighlightBlock = true;
     }
-    if (line && line == end_highlight_text) {
+    if (line && line == end_highlight) {
       insideHighlightBlock = false;
     }
     const isComment = inlineCommentRe.test(line);
