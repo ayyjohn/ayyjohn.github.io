@@ -1,4 +1,9 @@
-const { forEachLine, getLineMetadata, lineMetadata,  inlineCommentRe } = require('markdownlint-rule-helpers');
+const {
+  forEachLine,
+  getLineMetadata,
+  lineMetadata,
+  inlineCommentRe,
+} = require("markdownlint-rule-helpers");
 
 const start_highlight_text = "{% highlight ";
 const end_highlight_text = "{% endhighlight %}";
@@ -12,18 +17,18 @@ const noRenderedComments = (params, onError) => {
     if (line && line == end_highlight_text) {
       insideHighlightBlock = false;
     }
-    isComment = inlineCommentRe.test(line)
+    const isComment = inlineCommentRe.test(line);
     if (insideHighlightBlock && isComment) {
       onError({
-        "lineNumber": lineIndex,
-      })
+        lineNumber: lineIndex,
+      });
     }
   });
-}
+};
 
 module.exports = {
-  "names": [ "CMD-001", "no-rendered-comments" ],
-  "description": "No markdown comments should be inside code blocks",
-  "tags": ["test"],
-  "function": noRenderedComments,
+  names: ["CMD-001", "no-rendered-comments"],
+  description: "No markdown comments should be inside code blocks",
+  tags: ["test"],
+  function: noRenderedComments,
 };
