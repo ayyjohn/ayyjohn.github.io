@@ -21,5 +21,6 @@ def geohash(latitude, longitude, datedow):
 {% endhighlight %}
 <!-- markdownlint-enable MD022 MD025 -->
 ```
+
 {% endraw %}
 <!-- markdown-link-check-enable -->
