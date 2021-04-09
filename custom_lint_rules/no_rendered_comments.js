@@ -1,7 +1,6 @@
 const {
   forEachLine,
   getLineMetadata,
-  lineMetadata,
   inlineCommentRe,
 } = require("markdownlint-rule-helpers");
 
