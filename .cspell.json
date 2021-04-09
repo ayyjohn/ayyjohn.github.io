@@ -2,10 +2,12 @@
     "version": "0.1",
     "language": "en",
     "words": [
+        "Atul",
         "Bazel",
         "Bromium",
         "Cranston",
         "DDoS",
+        "Gawande",
         "Gwern's",
         "Gwern",
         "Jackboyz",
@@ -33,12 +35,14 @@
         "cyphertext",
         "datedow",
         "difflib",
+        "downcase",
         "ehhh",
         "elementified",
         "else's",
         "endcapture",
         "endfor",
         "endraw",
+        "frontmatter",
         "geohash",
         "hashlib",
         "herbie",
@@ -78,6 +82,6 @@
         "hte",
         "followup",
         "non-binary",
-        "juts"
+        "juts",
     ]
 }
