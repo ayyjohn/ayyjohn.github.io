@@ -14,7 +14,7 @@ I'm not really sure what this blog is "about" yet, I'm still developing my perso
 
 * things in Python I find nifty
 * explanations of side projects
-* reflections careers in software
+* reflections on careers in software
 * reviews of experiences
 * armchair advice
 * meta posts about blogging with Jekyll
