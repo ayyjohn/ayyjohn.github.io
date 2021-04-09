@@ -26,7 +26,7 @@ const noRenderedComments = (params, onError) => {
 };
 
 module.exports = {
-  names: ["CMD-001", "no-rendered-comments"],
+  names: ["CMD001", "no-rendered-comments"],
   description: "No markdown comments should be inside code blocks",
   tags: ["test"],
   function: noRenderedComments,

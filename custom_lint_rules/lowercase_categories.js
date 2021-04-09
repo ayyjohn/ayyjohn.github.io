@@ -41,7 +41,7 @@ const lowercaseCategories = (params, onError) => {
 };
 
 module.exports = {
-  names: ["CMD-002", "all-categories-lowercase"],
+  names: ["CMD002", "all-categories-lowercase"],
   description: "all categories in frontmatter should be lowercase",
   tags: ["test"],
   function: lowercaseCategories,
