@@ -53,7 +53,7 @@ let voteForHerbie = () => {
     setTimeout(() => location.reload(), 500);
 };
 setInterval(voteForHerbie, 1000);
-{% endhighlight%}
+{% endhighlight %}
 <!-- markdownlint-enable MD011 -->
 
 Which seems to work for one iteration but has some issues running after reload.
@@ -117,7 +117,7 @@ After migrating to ES5 and using more helper functions to help with scoping (bec
     }
     window.onload = winJustinHerbertROY;
 })();
-{% endhighlight%}
+{% endhighlight %}
 <!-- markdownlint-enable MD011 MD034 -->
 
 I hope this isn't against the rules.

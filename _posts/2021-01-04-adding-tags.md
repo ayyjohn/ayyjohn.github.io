@@ -93,7 +93,6 @@ layout: page
 permalink: /tags/
 title: Categories
 ---
-<!-- markdownlint-enable MD003 -->
 
 <div class="posts-by-tag">
     <ul class="tag-post-list">
@@ -113,6 +112,7 @@ title: Categories
 {% endraw %}
 {% endhighlight %}
 
+<!-- markdownlint-enable MD003 -->
 ![bam](/assets/adding_tags/categories_page.png)
 
 And it magically appears on my homepage!
