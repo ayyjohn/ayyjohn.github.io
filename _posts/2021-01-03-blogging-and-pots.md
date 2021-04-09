@@ -6,9 +6,10 @@ permalink: /posts/:title
 categories: [meta]
 ---
 Most people have already heard of the Parable of the Pottery Class (if you haven't, my favorite rendition of it is [Hank Green's](https://www.youtube.com/watch?v=7dxcO26i9uw)).
-
 According to [this post](https://aliabdaal.com/pottery/) the source of the story is [Art & Fear](https://www.goodreads.com/book/show/187633.Art_and_Fear), but I've never read it.
-I'm going to take a pottery based approach to this blog. I want to try a lot of things out and see what sticks. I've got a list of one-off topics to write about, and also some post-generating ideas like
+The point is: I'm going to take a pottery based approach to this blog. I want to try a lot of things out and see what sticks.
+
+I've got a list of one-off topics to write about, and also some post-generating ideas like
 
 * doing 1-2 month long challenges
 * writing reviews of books or tools
