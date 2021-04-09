@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Add Tags to a Jekyll Blog"
+title:  "How to Add Categories to a Jekyll Blog"
 date:   2021-01-04 14:19:00 -0800
 permalink: /posts/:title
 categories: [meta, python, jekyll]
@@ -52,7 +52,7 @@ Next, before I add any other functionality, I can sanity check some basics by pu
     {%- endif -%}
 {% endraw %}
 {% endhighlight %}
-![Perfection](/assets/adding_tags/unstyled_tags.png)
+![Perfection](/assets/adding_categories/unstyled_categories.png)
 
 ## Et Voila
 
@@ -73,7 +73,7 @@ The style leaves something to be desired, so I'll add some minimal SCSS and adju
 }
 {% endhighlight %}
 
-![Glorious](/assets/adding_tags/styled_tags.png)
+![Glorious](/assets/adding_categories/styled_categories.png)
 
 ## Glorious
 
@@ -90,7 +90,7 @@ Ultimately, here's what I came up with. It's not glorious, but I'll take it.
 ---
 
 layout: page
-permalink: /tags/
+permalink: /categories/
 title: Categories
 ---
 
@@ -113,7 +113,7 @@ title: Categories
 {% endhighlight %}
 
 <!-- markdownlint-enable MD003 -->
-![bam](/assets/adding_tags/categories_page.png)
+![bam](/assets/adding_categories/categories_page.png)
 
 And it magically appears on my homepage!
 
@@ -127,7 +127,7 @@ Then, I need to give each of the headers on the categories page their own `id`
 
 and finally, the tag spans I made above need to contain a link to this `id`
 
-`<span class="post-tag"><a href={{ '/tags#' | append: tag }}>{{ tag | capitalize }}</a></span>`
+`<span class="post-tag"><a href={{ '/categories#' | append: tag }}>{{ tag | capitalize }}</a></span>`
 
 And it works!
 Thanks for coming to my TED talk.

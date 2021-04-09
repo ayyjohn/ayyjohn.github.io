@@ -22,7 +22,7 @@ layout: default
         </a>
         {%- if post.categories.size > 0 -%}
         {%- for tag in post.categories -%}
-        <span class="post-tag"><a class="tag-link" href={{ '/tags#' | append: tag }}>{{ tag | capitalize }}</a></span>
+        <span class="post-tag"><a class="tag-link" href={{ '/categories#' | append: tag }}>{{ tag | capitalize }}</a></span>
         {%- endfor -%}
         {%- endif -%}
         {%- if site.show_excerpts -%}
