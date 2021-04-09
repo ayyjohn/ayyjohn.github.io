@@ -4,6 +4,6 @@
     "markdownlint-rule-helpers": "^0.14.0"
   },
   "scripts": {
-      "test_lint": "markdownlint -r custom_lint_rules/no_rendered_comments.js ./_posts/2021-04-08-test-post.md -c .markdown-lint.json"
+      "test_lint": "markdownlint -r custom_lint_rules/no_rendered_comments.js ./test_posts/test-post.md -c .markdown-lint.json"
   }
 }
