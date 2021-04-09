@@ -25,6 +25,7 @@ import antigravity
 
 because the body of that file looks like
 
+<!-- markdown-link-check-disable -->
 <!-- markdownlint-disable MD022 MD025 -->
 {% highlight python %}
 # antigravity.py
@@ -37,6 +38,7 @@ def geohash(latitude, longitude, datedow):
     ...
 {% endhighlight %}
 <!-- markdownlint-enable MD022 MD025 -->
+<!-- markdown-link-check-enable -->
 
 and so that `webbrowser.open("https://xkcd.com/353/")` call is immediately invoked. Don't do this.
 
