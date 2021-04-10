@@ -21,20 +21,24 @@ const lowercaseCategories = (params, onError) => {
       detail: "posts are not allowed to specify multiple lists of categories",
     });
   } else {
-    let array_start = categories_lines[0].indexOf("[") + 1;
-    let array_end = categories_lines[0].length - 1;
-    let categories_string = categories_lines[0].substring(
+    const array_start = categories_lines[0].indexOf("[") + 1;
+    const array_end = categories_lines[0].length - 1;
+    const categories_string = categories_lines[0].substring(
       array_start,
       array_end
     );
-    let categories = categories_string.split(", ");
-    categories.forEach((category) => {
-      if (!isLowerCase(category)) {
-        onError({
-          lineNumber: 1,
-        });
-      }
-    });
+    const categories = categories_string.split(", ");
+    const uppercaseCategories = categories.filter(
+      (category) => !isLowerCase(category)
+    );
+    if (uppercaseCategories.length > 0) {
+      onError({
+        lineNumber: 1,
+        detail: `the following categories need to be lowercase: [${uppercaseCategories.join(
+          ", "
+        )}]`,
+      });
+    }
   }
 };
 

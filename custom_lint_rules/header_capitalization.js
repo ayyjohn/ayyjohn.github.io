@@ -8,7 +8,7 @@ const {
 const { isLowerCase } = require("../js/utils");
 
 const allowedHeaders = ["h2"];
-const doNotCapitalizeWords = [
+const doNotCapitalizeWords = new Set([
   "and",
   "the",
   "of",
@@ -22,7 +22,7 @@ const doNotCapitalizeWords = [
   "but",
   "so",
   "with",
-];
+]);
 
 const formattedHeaders = (params, onError) => {
   filterTokens(params, "heading_open", (token) => {
@@ -30,22 +30,34 @@ const formattedHeaders = (params, onError) => {
     if (line.startsWith("#")) {
       const textStart = line.indexOf(" ");
       const words = line.slice(textStart + 1).split(" ");
+      const shouldUppercaseWords = [];
+      const shouldLowercaseWords = [];
       words.forEach((word, index) => {
-        const shouldCapitalize = !doNotCapitalizeWords.includes(
+        const shouldCapitalize = !doNotCapitalizeWords.has(
           word.toLowerCase()
         );
         if (shouldCapitalize && isLowerCase(word)) {
-          onError({
-            lineNumber: lineNumber,
-            detail: `The word "${word}" at index ${index} needs to be capitalized`,
-          });
+          shouldUppercaseWords.push(word);
         } else if (!shouldCapitalize && !isLowerCase(word) && index != 0) {
-          onError({
-            lineNumber: lineNumber,
-            detail: `The word "${word}" at index ${index} shouldn't be capitalized but is`,
-          });
+          shouldLowercaseWords.push(word);
         }
       });
+      if (shouldUppercaseWords.length > 0) {
+        onError({
+          lineNumber: lineNumber,
+          detail: `the words [${shouldUppercaseWords.join(
+            ", "
+          )}] need to be capitalized`,
+        });
+      }
+      if (shouldLowercaseWords.length > 0) {
+        onError({
+          lineNumber: lineNumber,
+          detail: `the words [${shouldLowercaseWords.join(
+            ", "
+          )}] shouldn't be capitalized but are`,
+        });
+      }
     }
   });
 };
