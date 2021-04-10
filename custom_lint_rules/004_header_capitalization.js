@@ -7,7 +7,6 @@ const {
 
 const { isLowerCase } = require("../js/utils");
 
-const allowedHeaders = ["h2"];
 const doNotCapitalizeWords = new Set([
   "and",
   "the",
@@ -24,7 +23,7 @@ const doNotCapitalizeWords = new Set([
   "with",
 ]);
 
-const formattedHeaders = (params, onError) => {
+const capitalizeHeaders = (params, onError) => {
   filterTokens(params, "heading_open", (token) => {
     const { lineNumber, line, tag } = token;
     if (line.startsWith("#")) {
@@ -61,8 +60,8 @@ const formattedHeaders = (params, onError) => {
 };
 
 module.exports = {
-  names: ["CMD004", "headers-formatted"],
-  description: "headers should have title-style capitalization",
+  names: ["CMD004", "header-casing"],
+  description: "headers should be in title-case",
   tags: ["headers"],
-  function: formattedHeaders,
+  function: capitalizeHeaders,
 };
