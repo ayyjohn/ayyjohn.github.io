@@ -26,7 +26,7 @@ import antigravity
 because the body of that file looks like
 
 <!-- markdown-link-check-disable -->
-<!-- markdownlint-disable MD022 MD025 CMD003 -->
+<!-- markdownlint-disable MD022 MD025 CMD003 CMD004 -->
 {% highlight python %}
 # antigravity.py
 import webbrowser
@@ -37,7 +37,7 @@ webbrowser.open("https://xkcd.com/353/")
 def geohash(latitude, longitude, datedow):
     ...
 {% endhighlight %}
-<!-- markdownlint-enable MD022 MD025 CMD003-->
+<!-- markdownlint-enable MD022 MD025 CMD003 CMD004 -->
 <!-- markdown-link-check-enable -->
 
 and so that `webbrowser.open("https://xkcd.com/353/")` call is immediately invoked. Don't do this.
@@ -77,7 +77,7 @@ Still, I think it's useful to draw a distinction between import time and run tim
 
 To me, it makes sense to define "import time" as basically what happens between the first and last import statement in the file you're executing and "run time" as everything that happens after the interpreter starts up once you try and execute a script. So import time is a subset of run time.
 
-<!-- markdownlint-disable MD022 MD025 CMD003 -->
+<!-- markdownlint-disable MD022 MD025 CMD003 CMD004 -->
 {% highlight python %}
 # run time starts
 # import time starts
@@ -94,7 +94,7 @@ if __name__ == "__main__":
 
 # run time ends
 {% endhighlight %}
-<!-- markdownlint-enable MD022 MD025 CMD003 -->
+<!-- markdownlint-enable MD022 MD025 CMD003 CMD004 -->
 
 During import time Python is effectively [searching everywhere it knows it should](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html#basics-of-the-python-import-and-syspath) for the module you told it to look for, and then recursively importing (aka running) everything that file needs until eventually it hits a file that requires no new dependencies. (This creates what's called a "Dependency Tree" which you can actually inspect using a tool called [pipdeptree](https://pypi.org/project/pipdeptree/).
 

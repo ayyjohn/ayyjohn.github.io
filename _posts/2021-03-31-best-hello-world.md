@@ -25,7 +25,7 @@ That got me thinking about what the best possible introduction to programming is
 
 Ever since [the original C programming language demo](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) programmers have been taking their first steps by writing this program, in some form, in whatever language they're first introduced to.
 
-<!-- markdownlint-disable MD025 CMD003 -->
+<!-- markdownlint-disable MD025 CMD003 CMD004 -->
 {% highlight c %}
 
 # include <stdio.h>
@@ -35,7 +35,7 @@ int main() {
    return 0;
 }
 {% endhighlight %}
-<!-- markdownlint-enable MD025 CMD003 -->
+<!-- markdownlint-enable MD025 CMD003 CMD004 -->
 
 Not ideal. Even if you get the gist of this, you're likely to wonder what the heck a bunch of it means.
 

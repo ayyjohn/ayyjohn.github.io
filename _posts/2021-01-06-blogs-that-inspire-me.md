@@ -8,9 +8,9 @@ categories: [meta]
 Every time I read someone else's blog it feels like I fall down a rabbit hole of cross posts to other people's blogs and end up adding more things to my to-read list than I cross off.
 I'm going to do the same to you, but on purpose. These are blogs I recommend others read.
 
-<!-- markdownlint-disable CMD003 -->
+<!-- markdownlint-disable CMD004 -->
 ## [jvns.ca](https://jvns.ca/)
-<!-- markdownlint-enable CMD003 -->
+<!-- markdownlint-enable CMD004 -->
 
 I like Julia Evans' blog because she manages to teach a whole lot in each post. Her posts are also great for reference in very specific situations (like the one on questions she's asking in tech interviews) and are often super actionable. I'm especially a fan of the "summary of a day at recurse center and what I learned" style posts, as well as the "__ exercises" posts like the ones on curl and git where she'll teach a bit about something. I also love her zines.
 

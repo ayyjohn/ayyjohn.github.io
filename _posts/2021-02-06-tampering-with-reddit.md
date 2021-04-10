@@ -3,7 +3,7 @@ layout: post
 title:  "Tampering with Reddit"
 date:   2021-02-06 9:23:00 -0800
 permalink: /posts/:title
-categories: [tampermonkey, javascript]
+categories: [javascript]
 ---
 Using TamperMonkey for [my recent post about messing with the Pepsi ROTY vote](/posts/herbie-for-roty) had me kind of on the lookout for other scripts to write.
 

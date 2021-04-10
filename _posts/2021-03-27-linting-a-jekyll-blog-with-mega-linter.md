@@ -30,7 +30,7 @@ So the first thing I did is majorly decrease scope.
 
 mega-linter uses a `.mega-linter.yml` as a config file, and so I made one and put in the following
 
-<!-- markdownlint-disable MD003 MD022 MD025 MD032 CMD003 -->
+<!-- markdownlint-disable MD003 MD022 MD025 MD032 CMD003 CMD004 -->
 {% highlight yaml %}
 ---
 # only check for markdown errors and spelling
@@ -47,7 +47,7 @@ PRINT_ALPACA: false
 SHOW_ELAPSED_TIME: true
 ---
 {% endhighlight %}
-<!-- markdownlint-enable MD003 MD022 MD025 MD032 CMD003 -->
+<!-- markdownlint-enable MD003 MD022 MD025 MD032 CMD003 CMD004 -->
 
 This produced a much more manageable report where I can actually parse the logs and understand what to change. The first output had a lot of things I don't care about, and this one still does, but not nearly as many.
 
@@ -138,9 +138,9 @@ to my `.markdown-link-check.json` which tells the linter that if it gets a `403`
 
 Great! Now only `markdownlint` errors remaining.
 
-<!-- markdownlint-disable CMD003 -->
+<!-- markdownlint-disable CMD003 CMD004 -->
 ## markdownlint
-<!-- markdownlint-enable CMD003 -->
+<!-- markdownlint-enable CMD003 CMD004 -->
 
 While the other two linters were looking for particular things (dead links and spelling errors), [markdownlint](https://github.com/DavidAnson/markdownlint) is a multi-purpose, highly configurable tool for finding pretty much _anything_ wrong with your markdown.
 There's an exhaustive list of them with an explanation of each in the `README`, and the report it generates will tell you the file and line where you violated each rule. Also, by adding
