@@ -3,7 +3,7 @@ layout: post
 title:  "Quality of Life Aliases"
 date:   2021-02-27 17:21:07 -0800
 permalink: /posts/:title
-categories: [zsh, bash, python]
+categories: [zsh, python]
 ---
 One of the things that I miss most about working in an office with coworkers is knowledge sharing.
 

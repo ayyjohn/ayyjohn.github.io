@@ -3,7 +3,7 @@ layout: post
 title:  "Debugging a Broken Reddit"
 date:   2021-02-15 18:21:07 -0800
 permalink: /posts/:title
-categories: [tampermonkey, javascript, jquery]
+categories: [tampermonkey, javascript]
 ---
 While working on my [last post](/posts/tampering-with-reddit) about running Tampermonkey on Reddit I came across a bug that I though was worth posting about.
 
