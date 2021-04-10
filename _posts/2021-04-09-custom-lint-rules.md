@@ -7,7 +7,7 @@ categories: [javascript, linting, meta]
 ---
 Back in March I wrote [a post about introducing linting to this blog](/posts/linting) and at the end I said I'd follow up when I started adding custom lint rules. That time is now!
 
-## Why write your own lint rules?
+## Why Write Your Own Lint Rules?
 
 The [default rules that come with markdownlint](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md) are awesome, don't get me wrong. But as I mentioned in the previous post, linters are great for enforcing quality control, and what quality looks like differs depending on the author.
 
@@ -15,7 +15,7 @@ For example, not everyone who's using markdown is using [Jekyll](https://jekyllr
 
 But in this blog I've already encountered bugs in how I use categories, and so it makes sense for me to lint my `categories` section on each post.
 
-## Your own regression testing suite
+## Your Own Regression Testing Suite
 
 As I mentioned in [my post about categories](/posts/adding-categories) I made [Liquid](https://shopify.github.io/liquid/) iterate over all unique categories to generate my posts grouped by categories page.
 And since, to Jekyll, `Linting` is a different tag than `linting`, it'll make a new section on the categories page above all the others because capitals sort higher than lowercase letters.
@@ -62,7 +62,7 @@ This code produces the following rendered text
 
 This can be fixed simply by enforcing that there are none of those comments inside those highlight blocks.
 
-## Coding it Out
+## Coding It Out
 
 Now that I've got my two rules formalized in words, it's time to translate them into code.
 [markdownlint has a section on authoring custom rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/CustomRules.md) that's pretty comprehensive, and by combining that with [the code for all of the built in rules](https://github.com/DavidAnson/markdownlint/tree/main/lib) and the [helpers code](https://github.com/DavidAnson/markdownlint/blob/main/helpers/helpers.js) I was able to write my first rule
@@ -206,7 +206,7 @@ But one of the takeaways here is that neither of these custom lint rules are wha
 
 But for now the point is that they're only as good as I need them to be! I'm the only one using them, and they prevent my site from regressions so they're doing their job.
 
-## Future developments
+## Future Developments
 
 This second rule is a good candidate for automated fixing. Right now, it'll just tell me if it finds a post where the categories aren't all lowercase, but by providing it some more information I could have it automatically downcase all of them too. But that's a story for another time.
 
