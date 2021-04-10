@@ -5,22 +5,15 @@ date:   2021-04-08 12:14:51 -0800
 permalink: /posts/:title
 categories: [meta, linting, javascript]
 ---
-<!-- markdown-link-check-disable -->
-{% raw %}
 
-```python
-{% highlight python %}
-<!-- markdownlint-disable MD022 MD025 -->
-import webbrowser
-import hashlib
+## Heading Number One
 
-webbrowser.open("https://xkcd.com/353/")
+## Heading the Second
 
-def geohash(latitude, longitude, datedow):
-    ...
-{% endhighlight %}
-<!-- markdownlint-enable MD022 MD025 -->
-```
+## Heading the Third
 
-{% endraw %}
-<!-- markdown-link-check-enable -->
+## Heading of Index Four
+
+<!-- markdownlint-disable CMD003 -->
+## A Header Starting with Capital A
+<!-- markdownlint-enable CMD003 -->
