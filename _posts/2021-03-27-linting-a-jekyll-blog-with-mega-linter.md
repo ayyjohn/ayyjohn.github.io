@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linting a Jekyll Blog"
+title:  "Linting a Jekyll Blog with Mega-Linter"
 date:   2021-03-27 15:21:07 -0800
 permalink: /posts/:title
 categories: [meta, jekyll, linting]
