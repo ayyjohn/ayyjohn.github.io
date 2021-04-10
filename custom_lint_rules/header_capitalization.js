@@ -33,9 +33,7 @@ const formattedHeaders = (params, onError) => {
       const shouldUppercaseWords = [];
       const shouldLowercaseWords = [];
       words.forEach((word, index) => {
-        const shouldCapitalize = !doNotCapitalizeWords.has(
-          word.toLowerCase()
-        );
+        const shouldCapitalize = !doNotCapitalizeWords.has(word.toLowerCase());
         if (shouldCapitalize && isLowerCase(word)) {
           shouldUppercaseWords.push(word);
         } else if (!shouldCapitalize && !isLowerCase(word) && index != 0) {
