@@ -15,7 +15,7 @@ I figured an easy place to start would be making tags on my posts. It's light we
 It also gives me a change to write a `how I did this` style post and experiment a little bit with inserting code and photos of code into my blog.
 So, without further ado:
 
-## goals
+## Goals
 
 * I want to have tags displayed after each post in the main post list
 * I want to have tags displayed on the post page of each post
