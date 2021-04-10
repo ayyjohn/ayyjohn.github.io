@@ -5,7 +5,7 @@ date:   2021-04-09 11:14:07 -0800
 permalink: /posts/:title
 categories: [javascript, linting, meta]
 ---
-Back in March I wrote [a post about introducing linting to this blog](/posts/linting-a-jekyll-blog) and at the end I said I'd follow up when I started adding custom lint rules. That time is now!
+Back in March I wrote [a post about introducing linting to this blog](/posts/linting-a-jekyll-blog-with-mega-linter) and at the end I said I'd follow up when I started adding custom lint rules. That time is now!
 
 ## Why Write Your Own Lint Rules?
 
