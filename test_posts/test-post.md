@@ -3,7 +3,7 @@ layout: post
 title:  "Test Post Please Ignore"
 date:   2021-04-08 12:14:51 -0800
 permalink: /posts/:title
-categories: [meta, linting, javascript]
+categories: [meta, linting, Javascript, yeet]
 ---
 
 ## Heading Number One
