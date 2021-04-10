@@ -4,9 +4,7 @@ const {
   inlineCommentRe,
 } = require("markdownlint-rule-helpers");
 
-const isLowerCase = (string) => {
-  return string != string.toUpperCase() && string == string.toLowerCase();
-};
+const { isLowerCase } = require("../js/utils");
 
 const lowercaseCategories = (params, onError) => {
   const categories_lines = params.frontMatterLines.filter((line) =>
