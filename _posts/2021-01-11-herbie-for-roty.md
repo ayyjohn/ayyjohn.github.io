@@ -124,7 +124,7 @@ I hope this isn't against the rules.
 I set it to vote every 4 seconds which seemed about what a human could do if they really put their heart into it.
 Feel free to copy it and run it yourself in the background.
 
-## Go bolts
+## Go Bolts
 
 <p align="center">
 <img src='/assets/herbie_roty/vote_for_herbie.gif' class="herbie-vote-gif" width="450px" height="450px"/>
