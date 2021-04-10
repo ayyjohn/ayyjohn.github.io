@@ -24,7 +24,7 @@ I cloned the [cPython source](https://github.com/python/cpython) and went about 
 Then I realized that since I was looking at the entire CPython source code, everything in the standard lib must be in here.
 Here's a other couple things I found.
 
-## My own Easter Egg Hunt
+## My Own Easter Egg Hunt
 
 The first thing I thought to go looking for was the code for The Zen of Python. Since it's part of the standard library, the code for `import this` must be there somewhere so I went looking for it.
 I searched the first line of the poem: "Beautiful is better than ugly", but all that turned up was some test files and a docstring for `difflib`.
