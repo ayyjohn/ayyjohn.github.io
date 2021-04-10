@@ -7,7 +7,7 @@ const {
 const { isLowerCase } = require("../js/utils");
 
 const lowercaseCategories = (params, onError) => {
-  const categories_lines = params.frontMatterLines.filter(line =>
+  const categories_lines = params.frontMatterLines.filter((line) =>
     line.startsWith("categories: ")
   );
   if (categories_lines.length < 1) {
