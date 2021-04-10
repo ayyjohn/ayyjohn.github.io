@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Test Post Please Ignore"
+title:  "Test Post Please Ignore A This Post"
 date:   2021-04-08 12:14:51 -0800
 permalink: /posts/:title
-categories: [meta, linting, Javascript, yeet]
+categories: [meta, linting]
 ---
 
 ## Heading Number One
@@ -14,6 +14,6 @@ categories: [meta, linting, Javascript, yeet]
 
 ## Heading of Index Four
 
-<!-- markdownlint-disable CMD003 -->
+<!-- markdownlint-disable CMD004 -->
 ## A Header Starting with Capital A
-<!-- markdownlint-enable CMD003 -->
+<!-- markdownlint-enable CMD004 -->
