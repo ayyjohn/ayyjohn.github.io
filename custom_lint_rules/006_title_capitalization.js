@@ -17,6 +17,7 @@ const doNotCapitalizeWords = new Set([
   "in",
   "to",
   "at",
+  "vs",
   "for",
   "but",
   "so",
