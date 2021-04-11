@@ -13,7 +13,7 @@ Today is my first day at [Jumpstart.me](https://jumpstart.me) and I couldn't be 
 
 ## Why I Left Dropbox
 
-*This is not a post for airing my grievances. If you're a current or prospective Dropbox employee and are concerned, feel free to reach out for a conversation.*
+*Note: This is not a post for airing my grievances. If you're a current or prospective Dropbox employee and are concerned, feel free to reach out for a conversation.*
 
 That said, I'm more than comfortable sharing that the primary reason for leaving Dropbox was [their move to Virtual First](https://blog.dropbox.com/topics/company/dropbox-goes-virtual-first).
 Simply put, working remotely at Dropbox was not for me, and so once the announcement came out that the change was permanent, it was only a matter of time.
@@ -25,21 +25,21 @@ Early on I was struggling to feel engaged with work and so I spent a lot of time
 But over time it became clear that it wasn't something that I didn't know, it was that I didn't _care_.
 
 Other friends in tech expressed similar sentiment, a disillusionment with the glamor of working at FAANG tier companies once their offices were the same as any other job.
-Two pieces that resonated particularly painfully with me were [Bullshit Jobs by David Graeber](https://www.goodreads.com/book/show/34466958-bullshit-jobs) and [Smart People Should Build Things by Andrew Yang](https://www.goodreads.com/book/show/18085527-smart-people-should-build-things). It became more and more difficult to think the work I was doing was important or interesting.
+Two pieces that resonated particularly painfully with me were [Bullshit Jobs by David Graeber](https://www.goodreads.com/book/show/34466958-bullshit-jobs) and [Smart People Should Build Things by Andrew Yang](https://www.goodreads.com/book/show/18085527-smart-people-should-build-things). It was becoming more and more difficult to think the work I was doing was important or interesting.
 
 And so I started searching for something different.
 
 ## A Mission Driven Company
 
-For the last two years I've been volunteering at [Ada Academy, a bootcamp for women and nonbinary people](https://adadevelopersacademy.org/), and it's hard to express how much I love my work there.
-I began with tutoring, but now I'm involved with their admissions prep course, I give mock interviews, and I do presentations on things from solving algorithms questions to the basics of machine learning classifiers.
+For the last two years I've been volunteering at [Ada Academy, a bootcamp for women and nonbinary people](https://adadevelopersacademy.org/), and it's hard to express how much I love working there.
+I began with 1:1 tutoring, but now I help teach their admissions prep course, I give mock interviews, and I do presentations for each cohort on things from solving algorithms questions to the basics of machine learning classifiers.
 
-The goal with my next company was to get the same feeling from my daily work that I do from volunteering at Ada. Somewhere I don't mind putting in extra time, and in fact would be happy to.
+The goal with my next company was to get the same feeling from my daily work that I do from volunteering at Ada. I wanted to work somewhere I don't mind putting in extra time, or rather am happy to.
 
 Getting people hired is a personal passion of mine, and I'm thrilled to be doing that at scale.
-Diversity hiring is this incredible virtuous cycle where the more people are hired, the stronger the network effects for those who come after them who can find mentors like them. Rinse and repeat.
+Diversity hiring is this incredible virtuous cycle where the more people are hired, the stronger the network effects for those who come after them who can then find mentors. Rinse and repeat.
 
-Specifically helping people find their first jobs in tech is one of my favorite things to do.
+Specifically, helping people find their first jobs in tech is one of my favorite things to do.
 Being a software engineer has never been more accessible and it's one of the best ways to build generational wealth.
 A friend of mine recently finished what was, by [App Academy](https://www.appacademy.io/)'s standards, a miserable job search after graduating in March of 2020, and he still landed a base salary of $110k plus equity at a small startup. He'll never struggle to find work again.
 
@@ -60,6 +60,7 @@ If you want to change something, you change it.
 
 One of the coolest parts of being a software engineer is that your code can improve the lives of hundreds of thousands of people, millions if you're lucky.
 On the flip side, there's something inherently depressing about failing to fulfill that potential.
+
 It means a lot to me that I'll be able to quantify the positive impact I'll be making with each person the Jumpstart platform gets hired, and each company that improves its hiring pipeline with respect to URM candidates.
 
 ## Culture
@@ -72,7 +73,7 @@ I also really like the idea of being able to know every single person I work wit
 During my two years at Dropbox, most of the learning I did was self directed. Their generous learning stipend allowed me to buy pretty much my entire to-read list as far as professional development.
 This was awesome, but one of the reasons I went to Dropbox in the first place was to work on a system used by millions of people.
 
-The problem was that Dropbox was built by such good engineers, that pretty much everything as far as scalability was so far abstracted away from my day to day that I might as well have been working on a personal side project as far as scalability was concerned.
+The problem was that Dropbox was built by such good engineers that pretty much everything as far as scalability was so far abstracted away from my day to day that I might as well have been working on a personal side project as far as scalability was concerned.
 
 This is obviously a major win for Dropbox's platform team, but a loss for people like me looking to grow. I can't wait to break things, outgrow our infrastructure, and learn a million things along the way.
 
