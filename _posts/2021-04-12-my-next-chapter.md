@@ -2,7 +2,7 @@
 layout: post
 title:  "My Next Chapter"
 alternate-title: "Hello, Jumpstart!"
-date:   2021-02-15 09:00:00 -0800 # todo change to 4/12
+date:   2021-02-14 09:00:00 -0800 # todo change to 4/12
 permalink: /posts/:title
 categories: [life]
 ---
