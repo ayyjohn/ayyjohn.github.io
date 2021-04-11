@@ -18,7 +18,9 @@ I like Julia Evans' blog because she manages to teach a whole lot in each post. 
 
 People keep telling me I'd be a good manager. I really don't think so, or at least I don't aspire to be a manager, but I still enjoy reading Will's posts about engineering leadership and management. It was through his blog that I was first exposed to the ideas like using engineers' morale as a resource during long scale migrations that drag long past deadlines. I also really enjoy his pieces about mapping out an engineering career. He's the kind of person I'd like to have as a manager, because I feel like I could trust his input. I actually took an interview at Calm recently purely because he just became CTO.
 
+<!-- markdown-link-check-disable -->
 ## [Made of Bugs](https://blog.nelhage.com/)
+<!-- markdown-link-check-enable -->
 
 I'm not sure what it means that so many of these are current/ex Stripe employees. I'm keeping my eye on where these people end up though in the interest of working with one or more of them someday.
 Nelson worked on two tools that I absolutely love (Sorbet and LiveGrep), but I think I first heard his name in reference to [Accidentally Quadratic](https://accidentallyquadratic.tumblr.com/) which is just one of his many side projects.
