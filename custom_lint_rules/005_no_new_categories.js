@@ -11,7 +11,7 @@ const existingCategories = new Set([
   "football",
   "javascript",
   "jekyll",
-  "jquery",
+  "life",
   "linting",
   "meta",
   "python",
