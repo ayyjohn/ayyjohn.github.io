@@ -21,7 +21,7 @@ Simply put, working remotely at Dropbox was not for me, and so once the announce
 Why wasn't Virtual First at Dropbox for me?
 
 In 2020 I, like a lot of other people, had a lot of time to read.
-Early in work from home I was struggling to feel engaged with work. I didn't feel like I was learning anything new or making a positive impact on the codebase or Dropbox's product.
+Early in work from home I was struggling to feel engaged with work. I didn't feel like I was learning anything new or making a positive impact on the Dropbox's codebase or product.
 This lead me to spend a lot of time reading self-helpy books about how to do my job better. [The Passionate Programmer](https://www.goodreads.com/book/show/6399113-the-passionate-programmer), [The Clean Coder](https://www.goodreads.com/book/show/10284614-the-clean-coder), [The Pragmatic Programmer](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer). They're all good books, don't get me wrong.
 But over time it became clear that it wasn't that there was something that I didn't know, it was that I didn't _care_.
 
