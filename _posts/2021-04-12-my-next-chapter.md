@@ -31,8 +31,7 @@ Disillusionment with the glamor of working at FAANG tier companies once their of
 
 I began to read more about individualism and empowerment. Two pieces that resonated particularly painfully with me were [Bullshit Jobs by David Graeber](https://www.strike.coop/bullshit-jobs/) and [Smart People Should Build Things by Andrew Yang](https://www.goodreads.com/book/show/18085527-smart-people-should-build-things).
 
-It became difficult to ignore that I didn't feel like there would be a difference whether or not I did my job, and without the benefits of a glamorous office to look forward to, there wasn't much left for me. I missed my teammates and felt isolated from them.
-<!-- something about the allure of the startup lifestyle -->
+It became difficult to ignore that I didn't feel like there would be a difference whether or not I did my job, and without the return to the office to look forward to, there wasn't much left for me. I missed my teammates and felt isolated from them. Meanwhile, working at a small company was sounding better and better.
 
 And so I started searching for something different.
 
