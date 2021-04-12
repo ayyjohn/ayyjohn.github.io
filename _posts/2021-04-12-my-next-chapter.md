@@ -13,7 +13,7 @@ Today is my first day at [Jumpstart.me](https://jumpstart.me) and I couldn't be 
 
 ## Why I Left Dropbox
 
-*Note: This is not a post for airing my grievances. If you're a current or prospective Dropbox employee and would like to talk, feel free to reach out.*
+This is not a post for airing my grievances. If you're a current or prospective Dropbox employee and would like to talk, feel free to reach out.*
 
 That said, I feel confident saying that I would still be at Dropbox if the company hadn't decided to [switch to virtual first](https://blog.dropbox.com/topics/company/dropbox-goes-virtual-first).
 Simply put, working remotely at Dropbox was not for me, and so once the announcement came out that the change was permanent, it was only a matter of time.
