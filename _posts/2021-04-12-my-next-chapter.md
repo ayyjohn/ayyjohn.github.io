@@ -15,19 +15,20 @@ Today is my first day at [Jumpstart.me](https://jumpstart.me) and I couldn't be 
 
 *Note: This is not a post for airing my grievances. If you're a current or prospective Dropbox employee and would like to talk, feel free to reach out.*
 
-That said, I feel confident saying that I would still be at Dropbox if the company hadn't decided to [go virtual first](https://www.strike.coop/bullshit-jobs/).
+That said, I feel confident saying that I would still be at Dropbox if the company hadn't decided to [switch to virtual first](https://blog.dropbox.com/topics/company/dropbox-goes-virtual-first).
 Simply put, working remotely at Dropbox was not for me, and so once the announcement came out that the change was permanent, it was only a matter of time.
 
 Why wasn't Virtual First at Dropbox for me?
 
 In 2020 I, like a lot of other people, had a lot of time to read.
-Early in work from home I was struggling to feel engaged with work, and so I spent a lot of time reading self-helpy books about how to do my job better. [The Passionate Programmer](https://www.goodreads.com/book/show/6399113-the-passionate-programmer), [The Clean Coder](https://www.goodreads.com/book/show/10284614-the-clean-coder), [The Pragmatic Programmer](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer). They're all good books, don't get me wrong.
+Early in work from home I was struggling to feel engaged with work. I didn't feel like I was learning anything new or making a positive impact on the codebase or Dropbox's product.
+This lead me to spend a lot of time reading self-helpy books about how to do my job better. [The Passionate Programmer](https://www.goodreads.com/book/show/6399113-the-passionate-programmer), [The Clean Coder](https://www.goodreads.com/book/show/10284614-the-clean-coder), [The Pragmatic Programmer](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer). They're all good books, don't get me wrong.
 But over time it became clear that it wasn't that there was something that I didn't know, it was that I didn't _care_.
 
 Other friends in tech expressed similar sentiments.
-Disillusionment with the glamor of working at FAANG tier companies once their offices were the same as any other job. Frustration with the ratio of process to programming.
+Disillusionment with the glamor of working at FAANG tier companies once their offices were the same as any other job. Frustration with the ratio of process to programming. Hopelessness in the face of unmaintainable codebases.
 
-I began to read more about individualism and empowerment. Two pieces that resonated particularly painfully with me were [Bullshit Jobs by David Graeber](https://www.strike.coop/bullshit-jobs/) and [Smart People Should Build Things by Andrew Yang](https://www.goodreads.com/book/show/18085527-smart-people-should-build-things). 
+I began to read more about individualism and empowerment. Two pieces that resonated particularly painfully with me were [Bullshit Jobs by David Graeber](https://www.strike.coop/bullshit-jobs/) and [Smart People Should Build Things by Andrew Yang](https://www.goodreads.com/book/show/18085527-smart-people-should-build-things).
 
 It became difficult to ignore that I didn't feel like there would be a difference whether or not I did my job, and without the benefits of a glamorous office to look forward to, there wasn't much left for me. I missed my teammates and felt isolated from them.
 <!-- something about the allure of the startup lifestyle -->
@@ -75,7 +76,7 @@ It means a lot to me that I'll be able to quantify the positive impact I'll be m
 
 I know not everyone is like me in this respect, but I want to be friends with my teammates. Yes, "a job is a job," but if you're going to be spending eight hours a day with people, why not like those people? Why not want to hang out with some of those people outside of work?
 
-I also really like the idea of being able to know all my coworkers. 
+I also really like the idea of being able to know all my coworkers.
 With only ~70 employees there's more room for each person's personality to shine through, and more penetration of infectious energy.
 It's one of the reasons why I'm so excited to work with people like [Tariq Meyers](https://www.linkedin.com/in/tariq-meyers/). I could listen to him talk all day.
 
