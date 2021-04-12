@@ -84,7 +84,7 @@ I'm so excited to work with people like [Tariq Meyers](https://www.linkedin.com/
 During my two years at Dropbox, most of the learning I did was self directed. Their generous learning stipend allowed me to buy pretty much my entire to-read list as far as professional development.
 This was awesome, but one of the reasons I went to Dropbox in the first place was to work on a system used by millions of people.
 
-The problem is that Dropbox was built by such good engineers that pretty much everything as far as scalability was so far abstracted away from my day to day that I might as well have been working on a personal side project as far as scalability was concerned.
+The problem is that Dropbox was built by great engineers, and so concerns like scalability were abstracted away from my day to day work.
 This is obviously a major win for Dropbox's platform team, but a loss for young engineers like me looking to grow early in their careers.
 
 I can't wait to move fast, break things, outgrow our infrastructure, and learn a million things along the way.
