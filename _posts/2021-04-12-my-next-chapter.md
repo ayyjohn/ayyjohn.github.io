@@ -104,4 +104,4 @@ Other than monetary compensation there's not a lot big companies can offer right
 If you're a new software engineer trying to break into the industry, I'm always happy to do resume reviews or give advice, shoot me a message on [Linkedin](https://linkedin.com/in/ayyjohn/).
 <!-- markdown-link-check-enable -->
 
-If what I've talked about in this post sounds good to you, you can reach me at [alec@jumpstart.me](mailto:alec@jumpstart.me). We're hiring :)
+If what I've talked about in this post sounds good to you, you can reach me at [alec@jumpstart.me](mailto:alec@jumpstart.me). [We're hiring :)](https://jumpstart.me/team)
