@@ -78,7 +78,7 @@ I know not everyone is like me in this respect, but I want to be friends with my
 
 I also really like the idea of being able to know all my coworkers.
 With only ~70 employees there's more room for each person's personality to shine through, and more penetration of infectious energy.
-It's one of the reasons why I'm so excited to work with people like [Tariq Meyers](https://www.linkedin.com/in/tariq-meyers/). I could listen to him talk all day.
+I'm so excited to work with people like [Tariq Meyers](https://www.linkedin.com/in/tariq-meyers/). I could listen to him talk all day.
 
 ## Growth
 During my two years at Dropbox, most of the learning I did was self directed. Their generous learning stipend allowed me to buy pretty much my entire to-read list as far as professional development.
