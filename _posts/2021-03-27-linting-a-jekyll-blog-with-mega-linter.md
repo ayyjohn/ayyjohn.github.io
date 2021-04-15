@@ -11,7 +11,9 @@ And even though I didn't become a regular reader, one thing that caught my eye w
 ## Why Lint Your Blog?
 
 There's a lot of good reasons to lint your blog. Basics start at spellchecking and syntax, where you might catch a typo or two per post. But there's a lot more available.
-Once a blog gets large enough, you start having degradation of quality because it's not easy to manually check for consistency between posts. You may not use the same formatting, and so posts might look different. You might forget if you normally use `##` or `###` for sub headers, or if you always use punctuation.
+Once a blog gets large enough, you start having degradation of quality because it's not easy to manually check for consistency between posts.
+You may not use the same formatting, and so posts might look different. You might forget if you normally use `##` or `###` for sub headers, or if you always use punctuation at the end of lines.
+Posts may go through multiple drafts, and you might leave yourself `todos` that you want to take care of before publishing.
 Links may expire, and so older posts will have dead links that don't point anywhere anymore.
 Long story short, just like having an auto linter on a production codebase is a great idea, so is having an auto linter on your blog! So that's what I added this morning to this site.
 
@@ -25,10 +27,22 @@ This means I can start by limiting linting to my posts, and over time expand to 
 
 ## Starting Out
 
-After installing mega-linter using `npm` I tried running it in default mode on my whole repo, and there were thousands of errors. So many that I didn't even know where to start.
+After installing mega-linter-runner using
+
+```zsh
+npx mega-linter-runner --install
+```
+
+I tried running it in default mode on my whole repo using
+
+```zsh
+alias lint="npx mega-linter-runner"
+```
+
+and there were thousands of errors. So many that I didn't even know where to start.
 So the first thing I did is majorly decrease scope.
 
-mega-linter uses a `.mega-linter.yml` as a config file, and so I made one and put in the following
+mega-linter uses a `.mega-linter.yml` as a config file, and will actually help you create one using a setup wizard when you install. I did this, and then edited it to contain the following
 
 <!-- markdownlint-disable MD003 MD022 MD025 MD032 CMD003 CMD004 -->
 {% highlight yaml %}
@@ -39,8 +53,6 @@ ENABLE:
 - SPELL
 # only look in the _posts/ directory
 FILTER_REGEX_INCLUDE: (_posts/)
-# reduce startup time by telling the linter that this is a ruby project
-FLAVOR: ruby
 # suppress fun output cause I'm boring
 PRINT_ALPACA: false
 # tell me how long linting is taking
@@ -48,6 +60,12 @@ SHOW_ELAPSED_TIME: true
 ---
 {% endhighlight %}
 <!-- markdownlint-enable MD003 MD022 MD025 MD032 CMD003 CMD004 -->
+
+I also added a handy alias to my `.zshrc` and set mega-linter to use the `ruby` flavor since Jekyll is a ruby based project.
+
+```zsh
+alias lint="npx mega-linter-runner --flavor ruby"
+```
 
 This produced a much more manageable report where I can actually parse the logs and understand what to change. The first output had a lot of things I don't care about, and this one still does, but not nearly as many.
 
