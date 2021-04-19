@@ -9,7 +9,16 @@ FILTER_REGEX_EXCLUDE: (_site/|test_posts/)
 MARKDOWN_FILTER_REGEX_INCLUDE: (_posts/)
 SPELL_FILTER_REGEX_INCLUDE: (_posts/)
 FLAVOR_SUGGESTIONS: false
-PRINT_ALPACA: false
 SHOW_ELAPSED_TIME: true
 JAVASCRIPT_DEFAULT_STYLE: prettier
+# suppress extra outputs
+PRINT_ALPACA: false
+UPDATED_SOURCES_REPORTER: false
+TEXT_REPORTER: false
+GITHUB_STATUS_REPORTER: false
+GITHUB_COMMENT_REPORTER: false
+# config locations
+SPELL_CSPELL_CONFIG_FILE: lint_configs/.cspell.json
+MARKDOWN_MARKDOWNLINT_CONFIG_FILE: lint_configs/.markdown-lint.json
+MARKDOWN_MARKDOWN_LINK_CHECK_CONFIG_FILE: lint_configs/.markdown-link-check.json
 MARKDOWN_MARKDOWNLINT_ARGUMENTS: -r "/tmp/lint/custom_lint_rules"
