@@ -4,6 +4,6 @@
     "markdownlint-rule-helpers": "^0.14.0"
   },
   "scripts": {
-      "test_custom_lint": "markdownlint -r custom_lint_rules/ ./test_posts/ -c lint_configs/.markdown-lint.json",
+      "test_custom_lint": "markdownlint -r custom_lint_rules/ ./test_posts/ -c lint_configs/.markdown-lint.json"
   }
 }
