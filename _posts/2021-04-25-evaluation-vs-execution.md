@@ -26,6 +26,9 @@ world
 
 This helps us as teachers to explain to new programmers how to read code, and it's a contrast to languages
 like Javascript.
+
+## How Javascript Does It
+
 Javascript is asynchronous by default and so you can't depend on something that is invoked above happening before something that is invoked below.
 
 ```javascript
