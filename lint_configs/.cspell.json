@@ -13,6 +13,7 @@
         "Gwern",
         "Gwern's",
         "Jackboyz",
+        "Javascript's",
         "Kelce",
         "Linkedin",
         "Munroe",
@@ -26,6 +27,7 @@
         "Vimium",
         "WPMOY",
         "adies",
+        "asyncio",
         "ayyjohn",
         "bazel",
         "blahblah",
@@ -83,7 +85,8 @@
         "upvotes",
         "webbrowser",
         "xkcd",
-        "yeet"
+        "yeet",
+        "youtube"
     ],
     "flagWords": [
         "hte",
