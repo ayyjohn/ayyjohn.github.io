@@ -6,7 +6,6 @@ const {
 
 const noTodos = (params, onError) => {
   forEachLine(getLineMetadata(params), (line, lineIndex) => {
-    console.log(line);
     if (line && line.includes("@todo")) {
       onError({
         lineNumber: lineIndex
