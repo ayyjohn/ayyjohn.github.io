@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Best Hello World Program"
-alternate-title: "Why I Recommend Python to Beginners"
+alternate_title: "Why I Recommend Python to Beginners"
 date:   2021-03-31 6:21:07 -0800
 permalink: /posts/:title
 categories: [python]

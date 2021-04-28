@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Being Able to Answer Stupid Questions"
-alternate-title:  "Justice for Max Dell"
+alternate_title:  "Justice for Max Dell"
 date:   2021-03-08 10:21:07 -0800
 permalink: /posts/:title
 categories: [python]
