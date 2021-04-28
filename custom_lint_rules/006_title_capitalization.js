@@ -26,17 +26,17 @@ const doNotCapitalizeWords = new Set([
 
 const capitalizeTitles = (params, onError) => {
   const titles_lines = params.frontMatterLines.filter((line) =>
-    line.startsWith("title:")
+    line.startsWith("title:") || line.startsWith("alternate_title:")
   );
   if (titles_lines.length < 1) {
     onError({
       lineNumber: 1,
       detail: "all posts should have a title",
     });
-  } else if (titles_lines.length > 1) {
+  } else if (titles_lines.length > 2) {
     onError({
       lineNumber: 1,
-      detail: "posts are not allowed to specify multiple top level titles",
+      detail: "posts are not allowed to have more than a title and an alternate title",
     });
   } else {
     const title_start = titles_lines[0].indexOf('"');
