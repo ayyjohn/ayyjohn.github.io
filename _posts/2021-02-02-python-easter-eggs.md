@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Baby's Intro to the CPython Source Code"
-alternate-title:  "Fun in Programming (maybe as a follow-up post)"
+alternate_title:  "Fun in Programming Languages"
 date:   2021-02-02 11:00:17 -0800
 permalink: /posts/:title
 categories: [python]
@@ -85,4 +85,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'geohash'
 {% endhighlight %}
 
-Either way you'd end up looking at `antigravity.py` and realize that the module contains one function: `geohash` which implements the geohash algorithm contained in [xkcd.com/426/](https://xkcd.com/426/). I kind of love mutual love between Randall Munroe and Guido. Having fun things like this in Python's standard lib is one of my favorite reasons to recommend it to newcomers to programming. I like telling people that I use this language that people have spent time making enjoyable for my job.
+Either way you'd end up looking at `antigravity.py` and realize that the module contains one function: `geohash` which implements the geohash algorithm contained in [xkcd.com/426/](https://xkcd.com/426/).
+I kind of love the mutual love between Randall Munroe and the Python community.
+Having fun things like this in Python's standard lib is one of my favorite reasons to recommend it to newcomers to programming.
+I like using a language for my job that people have spent time making enjoyable.
