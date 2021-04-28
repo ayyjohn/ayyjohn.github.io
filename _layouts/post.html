@@ -5,6 +5,10 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% if page.alternate_title %}
+    <!-- <h3 class="post-alternate-title-or p-name">or...</h3> -->
+    <h3 class="post-alternate-title p-name">or: <i>{{ page.alternate_title | escape }}</i></h3>
+    {% endif %}
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
