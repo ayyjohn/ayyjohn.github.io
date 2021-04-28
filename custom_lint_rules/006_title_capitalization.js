@@ -38,39 +38,38 @@ const capitalizeTitles = (params, onError) => {
       lineNumber: 1,
       detail: "posts are not allowed to have more than a title and an alternate title",
     });
-  } else {
-    const title_start = titles_lines[0].indexOf('"');
-    const title_end = titles_lines[0].length - 1;
-    const title_string = titles_lines[0].substring(title_start, title_end);
-    const words = title_string.split(" ");
-    const shouldUppercaseWords = [];
-    const shouldLowercaseWords = [];
+  }
+  const title_start = titles_lines[0].indexOf('"');
+  const title_end = titles_lines[0].length - 1;
+  const title_string = titles_lines[0].substring(title_start, title_end);
+  const words = title_string.split(" ");
+  const shouldUppercaseWords = [];
+  const shouldLowercaseWords = [];
 
-    words.forEach((word, index) => {
-      const shouldCapitalize = !doNotCapitalizeWords.has(word.toLowerCase());
-      if (shouldCapitalize && isLowerCase(word)) {
-        shouldUppercaseWords.push(word);
-      } else if (!shouldCapitalize && !isLowerCase(word) && index != 0) {
-        shouldLowercaseWords.push(word);
-      }
+  words.forEach((word, index) => {
+    const shouldCapitalize = !doNotCapitalizeWords.has(word.toLowerCase());
+    if (shouldCapitalize && isLowerCase(word)) {
+      shouldUppercaseWords.push(word);
+    } else if (!shouldCapitalize && !isLowerCase(word) && index != 0) {
+      shouldLowercaseWords.push(word);
+    }
+  });
+  let detail = "";
+  if (shouldUppercaseWords.length > 0) {
+    detail += `the words [${shouldUppercaseWords.join(
+      ", "
+    )}] need to be capitalized. `;
+  }
+  if (shouldLowercaseWords.length > 0) {
+    detail += `the words [${shouldLowercaseWords.join(
+      ", "
+    )}] shouldn't be capitalized but are.`;
+  }
+  if (detail != "") {
+    onError({
+      lineNumber: 1,
+      detail: detail,
     });
-    let detail = "";
-    if (shouldUppercaseWords.length > 0) {
-      detail += `the words [${shouldUppercaseWords.join(
-        ", "
-      )}] need to be capitalized. `;
-    }
-    if (shouldLowercaseWords.length > 0) {
-      detail += `the words [${shouldLowercaseWords.join(
-        ", "
-      )}] shouldn't be capitalized but are.`;
-    }
-    if (detail != "") {
-      onError({
-        lineNumber: 1,
-        detail: detail,
-      });
-    }
   }
 };
 
