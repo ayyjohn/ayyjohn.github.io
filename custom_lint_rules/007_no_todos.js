@@ -9,7 +9,7 @@ const noTodos = (params, onError) => {
     if (line && line.includes("@todo")) {
       onError({
         lineNumber: lineIndex
-      })
+      });
     }
   });
 };
