@@ -1,0 +1,2 @@
+alias preflight="npx mega-linter-runner --flavor ruby -e MEGALINTER_CONFIG='.preflight-mega-linter.yml'"
+alias lint="npx mega-linter-runner --flavor ruby -e MEGALINTER_CONFIG='.short-mega-linter.yml'"
