@@ -8,7 +8,7 @@ Hi! Welcome to my blog.
 
 My name is Alec, but my IRC friends call me ayyjohn. I've always wanted to see if I could make AJ happen.
 
-I'm a software engineer at [jumpstart](https://jumpstart.me).
+I'm a software engineer at [Canvas](https://canvas.com).
 
 I'm not really sure what this blog is "about" yet, I'm still developing my personal brand. My interests are kind of all over the place, but you can expect to see articles about
 

@@ -5,3 +5,4 @@ _drafts
 .vscode/
 report/
 favicon_io/
+node_modules/
