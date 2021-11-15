@@ -30,7 +30,7 @@ The first thing I thought to go looking for was the code for The Zen of Python. 
 I searched the first line of the poem: "Beautiful is better than ugly", but all that turned up was some test files and a docstring for `difflib`.
 Then I realized, because of Python's import mechanism, it would have to be in a file called `this.py` so I searched for that and there it was! It's almost like they were deliberately trying to avoid people doing what I had done on my first try.
 
-<!-- cSpell:disable */  -->
+<!-- cSpell:disable -->
 {% highlight python %}
 s = """Gur Mra bs Clguba, ol Gvz Crgref
 
@@ -61,7 +61,7 @@ for c in (65, 97):
 
 print("".join([d.get(c, c) for c in s]))
 {% endhighlight %}
-<!-- cSpell:enable */  -->
+<!-- cSpell:enable -->
 
 The goobers decided to use a [rot13 cypher](https://en.wikipedia.org/wiki/ROT13). Rude.
 

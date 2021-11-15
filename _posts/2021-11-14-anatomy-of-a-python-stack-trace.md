@@ -19,6 +19,7 @@ There are many ways to break down different types of stack traces, but I'm going
 
 This is a prototypical example. I've got here a simple function that takes a user details dict and returns the username.
 
+<!-- cSpell:disable -->
 ```python
 def get_username(user):
     return user['useranme']
@@ -88,6 +89,7 @@ Traceback (most recent call last):
     return users[0]['username']()
 TypeError: 'str' object is not callable
 ```
+<!-- cSpell:enable -->
 
 Okay so again, I see that there's a `TypeError` caused on line 2 when I called `get_first_users_username` but the first time I saw this I wasn't positive what I did wrong.
 `'str' object is not callable`? What that means?
@@ -113,6 +115,7 @@ You can use their code wrong and cause it to throw an exception that you don't r
 
 What could be simpler? I just want the HTML code from Google's homepage.
 
+<!-- cSpell:disable -->
 ```python
 import requests
 
@@ -121,9 +124,11 @@ def ping_google():
 
 ping_google()
 ```
+<!-- cSpell:enable -->
 
 Cool let's run it.
 
+<!-- cSpell:disable -->
 ```python
 Traceback (most recent call last):
   File "ayyjohn.github.io/code_examples/python/stack_traces.py", line 6, in <module>
@@ -142,7 +147,7 @@ Traceback (most recent call last):
     raise InvalidSchema("No connection adapters were found for {!r}".format(url))
 requests.exceptions.InvalidSchema: No connection adapters were found for 'htts://google.com'
 ```
-
+<!-- cSpell:enable -->
 Yo, what the fuck, Python? I thought we were friends.
 
 This is the shortest program I've written so far, why is the error so ugly?
@@ -153,11 +158,15 @@ Ok no, that's dramatic, but this is a big step away from the two prior examples.
 The reason is that Python starts the stack trace where the error was first caused, and it's not uncommon for an argument not to be validated or break anything for a while before it eventually does.
 It's really easy to get intimidated by all of this mess dumping into your terminal, but you can fall back to those same steps from before.
 
+<!-- cSpell:disable -->
 When you find yourself in this type of situation, the first thing I recommend is finding the first place in the stack trace that's actually in code that you wrote. In that case, it's `line 4, in ping_google` where i wrote `print(requests.get("htts://google.com))`.
+<!-- cSpell:enable -->
 
 At least that will tell you, hopefully, what you wrote that caused the error (though not always as we'll see below).
 
+<!-- cSpell:disable -->
 In this case, with a keen eye you'll notice that `htts` should be `https`
+<!-- cSpell:enable -->
 
 Let's move to an example where the error isn't easy to spot, and the stack trace is largely unhelpful.
 
@@ -171,6 +180,7 @@ This week at [Ada](https://adadevelopersacademy.org) students were working on a 
 
 There's three models, a `Customer`, a `Video`, and a `Rental` model representing a user checking out a video from a video store ('member video stores?)
 
+<!-- cSpell:disable -->
 ```python
 from app import db
 from datetime import datetime
@@ -200,7 +210,10 @@ class Rental(db.Model):
     video = db.relationship("Video", backref="rentals")
 ```
 
+<!-- cSpell:enable -->
 And here's the test in question, which hits their app's `/customers/<id>` route to delete a customer that has some rentals
+
+<!-- cSpell:disable -->
 
 ```python
 def test_can_delete_customer_with_rental(client, one_checked_out_video):
@@ -335,6 +348,7 @@ E           sqlalchemy.orm.exc.UnmappedInstanceError: Class 'flask_sqlalchemy.Ba
 
 venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py:182: UnmappedInstanceError
 ```
+<!-- cSpell:enable -->
 
 Be honest, can you spot the problem?
 
@@ -357,12 +371,13 @@ Then I googled the error and came up with exactly nothing helpful.
 
 I mentioned before that as a last resort, it never helps to read the source code of the library you're using.
 
-Looking at a stack trace like this can definitely be intimidating, but one of the awesomest things about code is that there's nothing technically magic about it.
+Looking at a stack trace like this can definitely be intimidating, but one of the most awesome things about code is that there's nothing technically magic about it.
 It's really just the same thing we're doing in the first few examples, except the difference now is that we didn't write the code at the bottom of the stack trace.
+<!-- cSpell:disable -->
 Code is code is code, and we can go read the source code for the libraries we use! In this case, what I'm seeing first is that the error came from `venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py:182`.
 
 A quick google turns up the [source code](https://github.com/sqlalchemy/sqlalchemy/) for `sqlalchemy` which isn't even one of our direct dependencies in the project!
-It's a dependency of [flask-sqlalchemy](sqlalchemy.palletsprojects.com/). We're going deep.
+It's a dependency of [flask-sqlalchemy](https://sqlalchemy.palletsprojects.com/). We're going deep.
 The `compat.py` file is a red herring. It's a wrapper for handling exceptions, which means if there's an exception thrown in sqlalchemy it's likely going to go through here first.
 But above that is our first real clue: `sqlalchemy/orm/session.py:2056 in delete`. Now we can start to think about why there might be some issue in our code when we did `db.session.delete(rentals)` or `db.session.delete(customer)`
 
@@ -378,6 +393,7 @@ for rental in rentals:
     db.session.delete(rental)
 ```
 
+<!-- cSpell:enable -->
 What a journey!
 
 Here are some other things I often try when I see a new error message
