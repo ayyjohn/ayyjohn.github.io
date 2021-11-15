@@ -11,11 +11,11 @@ In fact, a real and valid way to write code, Test Driven Development (TDD) relie
 
 When I'm working with people who are learning to code, one of the most important lessons I try and impart on them is the value of being able to read an error message with a stack trace and get to the root of the problem.
 
-Sometimes I have a hard time in the moment explaining what I'm seeing, and so in this post I want to give some examples.
+Sometimes I have a hard time in the moment explaining what I'm seeing, and so in this post I want to give some examples and do a kind of "here's what I'm seeing."
 
 There are many ways to break down different types of stack traces, but I'm going to go with 4 classes today.
 
-## Class 1: Errors that Tell You Pretty Much Exactly what was Wrong
+## Class 1: Errors that Tell You Exactly what was Wrong
 
 This is a prototypical example. I've got here a simple function that takes a user details dict and returns the username.
 
@@ -47,16 +47,20 @@ KeyError: 'useranme'
 Bummer, but simple enough.
 The way I read this is "There's a `KeyError`, the key that wasn't present in the dict was `"useranme"`, and that happened on line 2 of `stack_traces.py` when I called `get_username`, which happened because on line 10 I called `print(get_username(user))`
 
-As you can see, I start at the bottom and work my way up. In general, this is how to start.
+As you can see, I start at the bottom and work my way up. In general, this should be the default.
 It doesn't always work, but it should be where you look first.
+
 Stack traces will start with the error and the line it was caused on (that's why it says `Traceback: most recent call last`), and then go "upward" over and over through each function that called a function that called a function to get to the error.
 In the best case scenario, the typo or problem was caused by that last line and the error is self explanatory.
+
 In this case, I meant `"username"` not `"useranme"`.
 
 Other common versions of this are situations where you have a typo in a variable name and you get a `NameError` because that variable doesn't exist, or a `SyntaxError` and Python points you directly to where you made an oopsy.
 A fun plug for Python 3.10 is how much better its errors have gotten! [Check out the improvements here](https://www.python.org/downloads/release/python-3100/).
 
-## Class 2: Errors that Tell You Where to Go but are Kind of Vague
+## Class 2: Errors that Just Tell You Where to Go
+
+Slightly worse, but still not too intimidating for newer programmers are errors like the following:
 
 ```python
 def get_first_users_username(users):
@@ -79,8 +83,6 @@ users = [user1, user2]
 print(get_username(users))
 ```
 
-uh oh
-
 ```python
 Traceback (most recent call last):
   File "ayyjohn.github.io/code_examples/python/stack_traces.py", line 18, in <module>
@@ -91,20 +93,20 @@ TypeError: 'str' object is not callable
 ```
 <!-- cSpell:enable -->
 
-Okay so again, I see that there's a `TypeError` caused on line 2 when I called `get_first_users_username` but the first time I saw this I wasn't positive what I did wrong.
+What I'm seeing is that there's a `TypeError` caused on line 2 when I called `get_first_users_username` but the first time I saw this I wasn't positive what I did wrong.
+
 `'str' object is not callable`? What that means?
 
-Luckily, StackOverflow has my back. I simply google that last line of the stack trace, and I notice [this post](https://stackoverflow.com/questions/36634449/python-str-object-is-not-callable) which helpfully explains to me that I accidentally added an extra set of parentheses at the end of my function which means I'm trying to call a string like it's a function.
+Luckily, StackOverflow has my back, and it's got yours too. I simply Google that last line of the stack trace, and I notice [this post](https://stackoverflow.com/questions/36634449/python-str-object-is-not-callable) which helpfully explains to me that I accidentally added an extra set of parentheses at the end of my function which means I'm trying to call a string like it's a function.
+
 Deleting those parentheses fixes the error.
 
 <!-- markdownlint-disable MD036 -->
 **Protip: if you're not familiar with an error, try looking for it on stackoverflow**
 <!-- markdownlint-enable MD036 -->
 
-If nothing turns up, try removing as much of the details specific to your code as possible. The number of times where I've had an issue in code that nobody else has is _very_ small.
-
 A sibling of this error is the `AttributeError: 'ClassName' object has no attribute 'something'` error, which comes from adding a `.something` to a variable that's an instance of class `ClassName` which apparently doesn't have a `self.something` or a `something()` method defined.
-When you see `NoneType` instead of `ClassName` in that error it means you have a variable that's equal to `None` (which is of the class `NoneType`) and you've tried to call a method on it. This is Python's version of the infamous "NullPointerException."
+When you see `NoneType` instead of `ClassName` in that error it means you have a variable that's equal to `None` (which is of the class `NoneType`) and you've tried to call a method on it. This is Python's version of the infamous Java [NullPointerException](https://stackoverflow.com/questions/218384/what-is-a-nullpointerexception-and-how-do-i-fix-it).
 
 ## Class 3: Errors that are Hidden Deeper in the Stack Trace
 
@@ -113,7 +115,7 @@ Libraries are great because millions of other people have written code to do thi
 
 You can use their code wrong and cause it to throw an exception that you don't recognize or even worse, the errors can be buried under layers of indirection because your code called their code which probably called some other library's code and finally something broke. Let's take a look at an example like that.
 
-What could be simpler? I just want the HTML code from Google's homepage.
+What could be simpler? This code should get me the HTML code from Google's homepage.
 
 <!-- cSpell:disable -->
 ```python
@@ -124,9 +126,6 @@ def ping_google():
 
 ping_google()
 ```
-<!-- cSpell:enable -->
-
-Cool let's run it.
 
 <!-- cSpell:disable -->
 ```python
@@ -147,15 +146,16 @@ Traceback (most recent call last):
     raise InvalidSchema("No connection adapters were found for {!r}".format(url))
 requests.exceptions.InvalidSchema: No connection adapters were found for 'htts://google.com'
 ```
+
 <!-- cSpell:enable -->
 Yo, what the fuck, Python? I thought we were friends.
 
-This is the shortest program I've written so far, why is the error so ugly?
-No connection adapters were found? `InvalidSchema`? I didn't write sessions.py. What is `site-packages`?
+This is the shortest program I've written so far, so why is the error so gnarly?
+No connection adapters were found? `InvalidSchema`? I didn't write sessions.py. What is `site-packages`? How did I get here?
 Guess I'll just give up on being a software engineer.
 
 Ok no, that's dramatic, but this is a big step away from the two prior examples.
-The reason is that Python starts the stack trace where the error was first caused, and it's not uncommon for an argument not to be validated or break anything for a while before it eventually does.
+The reason is that Python starts the stack trace where the error was first caused, and it's not uncommon for an argument passed to a library function not to be validated or break anything for a while before it eventually does.
 It's really easy to get intimidated by all of this mess dumping into your terminal, but you can fall back to those same steps from before.
 
 <!-- cSpell:disable -->
@@ -165,7 +165,7 @@ When you find yourself in this type of situation, the first thing I recommend is
 At least that will tell you, hopefully, what you wrote that caused the error (though not always as we'll see below).
 
 <!-- cSpell:disable -->
-In this case, with a keen eye you'll notice that `htts` should be `https`
+In this case, with a keen eye you'll notice that `htts` should be `https`.
 <!-- cSpell:enable -->
 
 Let's move to an example where the error isn't easy to spot, and the stack trace is largely unhelpful.
@@ -174,11 +174,11 @@ Let's move to an example where the error isn't easy to spot, and the stack trace
 
 That last one was bad, but not that bad.
 
-But now, let's take a look at an example that was actually the reason I wrote this post.
+But now, let's take a look at an example that was actually the inspiration for this post.
 
-This week at [Ada](https://adadevelopersacademy.org) students were working on a CRUD flask app. Here's the necessary context.
+This week at [Ada](https://adadevelopersacademy.org) students were working on a CRUD flask app. Here's the necessary context:
 
-There's three models, a `Customer`, a `Video`, and a `Rental` model representing a user checking out a video from a video store ('member video stores?)
+There's three models, `Customer`, `Video`, and a `Rental` model representing a user checking out a video from a video store ('member video stores?).
 
 <!-- cSpell:disable -->
 ```python
@@ -210,10 +210,7 @@ class Rental(db.Model):
     video = db.relationship("Video", backref="rentals")
 ```
 
-<!-- cSpell:enable -->
-And here's the test in question, which hits their app's `/customers/<id>` route to delete a customer that has some rentals
-
-<!-- cSpell:disable -->
+And here's the test in question
 
 ```python
 def test_can_delete_customer_with_rental(client, one_checked_out_video):
@@ -356,10 +353,10 @@ I couldn't!
 
 Going through the same steps as before
 
-* looking at the error itself wasn't helpful.
-* looking at the rest of the bottom of the stack trace wasn't helpful
-* finding the first place where the stack trace mentioned our code with `db.session.delete(rentals)` didn't immediately make me suspicious.
-* scrolling up to the top of the stacktrace, nothing immediately jumped out.
+* looking at the error itself isn't helpful.
+* looking at the rest of the bottom of the stack trace isn't helpful
+* finding the first place where the stack trace mentions our code with `db.session.delete(rentals)` tells me there's an issue with that call but it's not immediately apparent why.
+* scrolling up to the top of the stacktrace, nothing immediately jumps out.
 
 My first thought was that since `BaseQuery` wasn't mapped that there was some definition issue in the models. I figured it was coming from `Rental.query` throwing an error because the `Rental` model didn't have a `.query` method.
 
@@ -367,7 +364,7 @@ So I checked the imports to make sure the models were what I thought they were, 
 
 **Protip: debugging in teams is way better than debugging by yourself!**
 
-Then I googled the error and came up with exactly nothing helpful.
+Then I Googled the error and came up with exactly nothing helpful.
 
 I mentioned before that as a last resort, it never helps to read the source code of the library you're using.
 
@@ -376,30 +373,32 @@ It's really just the same thing we're doing in the first few examples, except th
 <!-- cSpell:disable -->
 Code is code is code, and we can go read the source code for the libraries we use! In this case, what I'm seeing first is that the error came from `venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py:182`.
 
-A quick google turns up the [source code](https://github.com/sqlalchemy/sqlalchemy/) for `sqlalchemy` which isn't even one of our direct dependencies in the project!
+A quick Google turns up the [source code](https://github.com/sqlalchemy/sqlalchemy/) for `sqlalchemy` which isn't even one of our direct dependencies in the project!
 It's a dependency of [flask-sqlalchemy](https://sqlalchemy.palletsprojects.com/). We're going deep.
 The `compat.py` file is a red herring. It's a wrapper for handling exceptions, which means if there's an exception thrown in sqlalchemy it's likely going to go through here first.
 But above that is our first real clue: `sqlalchemy/orm/session.py:2056 in delete`. Now we can start to think about why there might be some issue in our code when we did `db.session.delete(rentals)` or `db.session.delete(customer)`
 
-Luckily, the student had written other code that had the same syntax as the delete customer call, so we felt more confident looking into the rentals one.
-But unluckily, I'm not a Flask expert. I use [Django](https://www.djangoproject.com), where unfortunately `db.session.delete(rentals)` looks totally legal and valid, so I overlooked that that could be the problem.
+Luckily, the student had written code that had the same syntax as the delete customer call, so we felt confident that it was the rentals call that was problematic.
+But unluckily, I'm not a Flask expert. I use [Django](https://www.djangoproject.com), where unfortunately `db.session.delete(rentals)` looks totally legal and valid.
 
 What ended up working was comparing the types of the two calls. One succeeded, the other didn't. `type(customer)` revealed that it was a `db.Model` instance, but `type(rentals)` said that it was a `flask_sqlalchemy.BaseQuery` instance! Hey look, it's that thing that apparently doesn't have a `delete` method!
 
-Filtersets are iterable, and so a fix was changing `db.session.delete(rentals)` to the following
+I knew that the results of queries are iterable, and so a fix was changing `db.session.delete(rentals)` to the following
 
 ```python
 for rental in rentals:
     db.session.delete(rental)
 ```
-
 <!-- cSpell:enable -->
+
+But more generally the problem was you can't call `delete` on a `Query` object, you have to have an instance of the model itself.
+
 What a journey!
 
-Here are some other things I often try when I see a new error message
+On a final note, here are some other things I often try when I see a new error message
 
-* Search the error in slack! Often times the error is specific to the company or project you're working on, and somebody has run into it before.
-* Read some documentation! Often when you google something the answer won't be spelled out exactly. The error might be a product of some logical inconsistency in your app, and it's only after understanding that you've violated the API of the library in some way that you'll figure it out.
+* Search the error in Slack! Often times the error is specific to the company or project you're working on, and somebody has run into it before.
+* Read some documentation! Often when you Google something the answer won't be spelled out exactly. The error might be a product of some logical inconsistency in your app, and it's only after understanding that you've violated the API of the library in some way that you'll figure it out.
 * Change the code slightly to see if I can get a new error message that's more familiar.
 * Talk through it with somebody else, or type out what I'm thinking as if I was going to send it to someone. Usually I'll have a hard time explaining something that I did, and more often than not the error is related to that thing I don't understand as well as I thought
 
