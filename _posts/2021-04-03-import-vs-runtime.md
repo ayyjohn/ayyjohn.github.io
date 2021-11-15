@@ -13,7 +13,9 @@ In compiled languages, compile time and run time are distinct. Compilation is it
 But in Python, an interpreted language, code is just run.
 And so the reason that I was failing was that I was trying to describe a distinction between "importing code" and "running code" which, in Python, [doesn't actually exist](https://www.benkuhn.net/importtime/).
 
+<!-- markdownlint-disable CMD004 -->
 ## So What Happens?
+<!-- markdownlint-enable CMD004 -->
 
 When Python modules are imported, they're executed (aka run), and it just so happens that **most Python code, when executed, doesn't do anything but declare something**, like a class. When you write a function in the Python REPL, all that happens is that function is available for later use.
 

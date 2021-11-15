@@ -14,7 +14,7 @@ His knowledge of physics, math, and chemistry allow him to do reasonable calcula
 It's like a whimsical version of dimensional analysis, that process in high school chem class where you convert units by multiplying them out.
 (*It's also how you should approach obnoxious interview questions like "how many elevator repairmen work in New York City?*")
 
-## Brains Are Weird
+## Brains are Weird
 
 Earlier this week I was rewatching Breaking Bad with my girlfriend. One of the fun gimmicks of the show is that during the opening credits they take all the names and insert a chemical element's symbol.
 So for example, Aaron Paul becomes A**Ar**on Paul because they inserted `Ar` for Argon, and Bryan Cranston becomes **Br**yan Cranston because they inserted the `Br` for Bromium.
