@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I read Python Stack Traces"
+title:  "How to Read Python Stack Traces"
 date:   2021-11-14 2:33:51 -0800
 permalink: /posts/:title
 categories: [python, debugging]
