@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  ""
+title:  "How I read Python Stack Traces"
 date:   2021-11-14 2:33:51 -0800
 permalink: /posts/:title
-categories: [python]
+categories: [python, debugging]
 ---
 No matter how good of a programmer you are, you will write code that breaks. Being able to read broken code is a valuable skill. Code fails more than it succeeds `[citation needed]`
 
