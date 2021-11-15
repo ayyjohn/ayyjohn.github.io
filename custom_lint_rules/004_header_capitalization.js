@@ -21,6 +21,11 @@ const doNotCapitalizeWords = new Set([
   "but",
   "so",
   "with",
+  "are",
+  "what",
+  "was",
+  "from",
+  "that",
 ]);
 
 const capitalizeHeaders = (params, onError) => {
