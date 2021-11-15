@@ -8,7 +8,7 @@ categories: [python]
 ---
 What makes a good "Hello, World!" program?
 
-I've been volunteering as a 1:1 mentor at Ada Academy for over a year now, but this month, for the first time, I volunteered for [Ada Build](https://adadevelopersacademy.org/ada-build-prepare/), their prep course to help incoming students get ready to apply to the program.
+I've been volunteering as a 1:1 mentor at Ada Academy for over a year now, but this month, for the first time, I volunteered for [Ada Build](https://adadevelopersacademy.org/prepare/), their prep course to help incoming students get ready to apply to the program.
 
 As opposed to the students I've mentored 1:1, these students are often at the very beginning of their programming journey and need help with things from basic terminology and syntax to their first loop.
 
