@@ -7,7 +7,7 @@ categories: [python, debugging]
 ---
 No matter how good of a programmer you are, you will write code that breaks. Being able to read broken code is a valuable skill. Code fails more than it succeeds `[citation needed]`
 
-In fact, a real and valid way to write code, Test Driven Development (TDD) relies on writing code that breaks and then reading the error and fixing it.
+In fact, a real and valid way to write code, Test Driven Development (TDD) consists of writing code that breaks and then reading the error and fixing it.
 
 When I'm working with people who are learning to code, one of the most important lessons I try and impart on them is the value of being able to read an error message with a stack trace and get to the root of the problem.
 
@@ -45,6 +45,14 @@ KeyError: 'useranme'
 ```
 
 Bummer, but simple enough.
+
+First, the actual anatomy. A stack trace starts with the actual `Exception` thrown in Python. Here that's the `KeyError`.
+`Exception`s commonly come with a `message` argument that gives more context, that's the `: 'useranme'` part. In user-defined errors these can be super helpful by linking to documentation or giving a good description of why it's a problem.
+Then, above that, the next two lines go together. `File "ayyjohn.github.io/code_examples/python/stack_traces.py",` tells you the name of the file where the error was, `line 2` is the line that it was caused on, and `in get_username` is the function that the execution was inside at the time. Finally, `return user['useranme']` is the actual line of code that broke.
+Above that will be one or more calls that lead to the final, broken call. In this case, `<module>` just means that this was the top level because I ran this code using `python stack_traces.py` and the call to `print(get_username(user))` wasn't inside any function.
+
+Unless a user has done some custom exception handling, most stack traces should look something like this.
+
 The way I read this is "There's a `KeyError`, the key that wasn't present in the dict was `"useranme"`, and that happened on line 2 of `stack_traces.py` when I called `get_username`, which happened because on line 10 I called `print(get_username(user))`
 
 As you can see, I start at the bottom and work my way up. In general, this should be the default.
@@ -155,7 +163,7 @@ No connection adapters were found? `InvalidSchema`? I didn't write sessions.py. 
 Guess I'll just give up on being a software engineer.
 
 Ok no, that's dramatic, but this is a big step away from the two prior examples.
-The reason is that Python starts the stack trace where the error was first caused, and it's not uncommon for an argument passed to a library function not to be validated or break anything for a while before it eventually does.
+The reason is that Python starts the stack trace where the error was first caused, and it's common for an argument passed to a library function to go unvalidated or not break anything for a while before it causes problems.
 It's really easy to get intimidated by all of this mess dumping into your terminal, but you can fall back to those same steps from before.
 
 <!-- cSpell:disable -->
