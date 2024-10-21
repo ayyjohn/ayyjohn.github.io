@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "APIs: What's in a Name?"
-date: 2024-10-20:59:51 -0800
+date: 2024-10-20 7:59:51 -0800
 permalink: /posts/:title
 categories: [apis]
 ---
